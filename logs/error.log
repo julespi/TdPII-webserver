@@ -1,0 +1,64 @@
+[Thu Oct 03 19:23:07.289033 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465] mod_wsgi (pid=9268): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:23:07.289033 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465] mod_wsgi (pid=9268): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465] Traceback (most recent call last):\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]     from run import app as application\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]   File "D:/TdPII\\run.py", line 7, in <module>\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]     handler = RotatingFileHandler('logs/internal.log', maxBytes=10000, backupCount=3)\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\logging\\handlers.py", line 148, in __init__\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]     BaseRotatingHandler.__init__(self, filename, mode, encoding, delay)\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\logging\\handlers.py", line 55, in __init__\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]     logging.FileHandler.__init__(self, filename, mode, encoding, delay)\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\logging\\__init__.py", line 1087, in __init__\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]     StreamHandler.__init__(self, self._open())\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\logging\\__init__.py", line 1116, in _open\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465]     return open(self.baseFilename, self.mode, encoding=self.encoding)\r
+[Thu Oct 03 19:23:07.294046 2019] [wsgi:error] [pid 9268:tid 1976] [client ::1:55465] FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\xampp\\\\logs\\\\internal.log'\r
+[Thu Oct 03 19:23:11.044691 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464] mod_wsgi (pid=9268): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:23:11.044691 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464] mod_wsgi (pid=9268): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464] Traceback (most recent call last):\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]     from run import app as application\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]   File "D:/TdPII\\run.py", line 7, in <module>\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]     handler = RotatingFileHandler('logs/internal.log', maxBytes=10000, backupCount=3)\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\logging\\handlers.py", line 148, in __init__\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]     BaseRotatingHandler.__init__(self, filename, mode, encoding, delay)\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\logging\\handlers.py", line 55, in __init__\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]     logging.FileHandler.__init__(self, filename, mode, encoding, delay)\r
+[Thu Oct 03 19:23:11.047705 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\logging\\__init__.py", line 1087, in __init__\r
+[Thu Oct 03 19:23:11.048701 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]     StreamHandler.__init__(self, self._open())\r
+[Thu Oct 03 19:23:11.048701 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\logging\\__init__.py", line 1116, in _open\r
+[Thu Oct 03 19:23:11.048701 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464]     return open(self.baseFilename, self.mode, encoding=self.encoding)\r
+[Thu Oct 03 19:23:11.048701 2019] [wsgi:error] [pid 9268:tid 1984] [client ::1:55464] FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\xampp\\\\logs\\\\internal.log'\r
+[Thu Oct 03 19:24:29.215123 2019] [wsgi:error] [pid 8440:tid 1980] [client ::1:55473] mod_wsgi (pid=8440): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:24:29.215123 2019] [wsgi:error] [pid 8440:tid 1980] [client ::1:55473] mod_wsgi (pid=8440): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:24:29.215123 2019] [wsgi:error] [pid 8440:tid 1980] [client ::1:55473] Traceback (most recent call last):\r
+[Thu Oct 03 19:24:29.215123 2019] [wsgi:error] [pid 8440:tid 1980] [client ::1:55473]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Thu Oct 03 19:24:29.215123 2019] [wsgi:error] [pid 8440:tid 1980] [client ::1:55473]     from run import app as application\r
+[Thu Oct 03 19:24:29.215123 2019] [wsgi:error] [pid 8440:tid 1980] [client ::1:55473]   File "D:/TdPII\\run.py", line 8, in <module>\r
+[Thu Oct 03 19:24:29.216124 2019] [wsgi:error] [pid 8440:tid 1980] [client ::1:55473]     handler.setLevel(logging.INFO)\r
+[Thu Oct 03 19:24:29.216124 2019] [wsgi:error] [pid 8440:tid 1980] [client ::1:55473] AttributeError: module 'flask.logging' has no attribute 'INFO'\r
+[Thu Oct 03 19:59:47.617235 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:42378] mod_wsgi (pid=8560): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:59:47.617235 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:42378] mod_wsgi (pid=8560): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:59:47.618235 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:42378] Traceback (most recent call last):\r
+[Thu Oct 03 19:59:47.618235 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:42378]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Thu Oct 03 19:59:47.618235 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:42378]     from run import app as application\r
+[Thu Oct 03 19:59:47.618235 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:42378]   File "D:/TdPII\\run.py", line 3, in <module>\r
+[Thu Oct 03 19:59:47.618235 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:42378]     app.logger.removeHandler(default_handler)\r
+[Thu Oct 03 19:59:47.618235 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:42378] NameError: name 'app' is not defined\r
+[Thu Oct 03 19:59:56.878882 2019] [wsgi:error] [pid 8560:tid 1972] [client ::1:55725] mod_wsgi (pid=8560): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:59:56.878882 2019] [wsgi:error] [pid 8560:tid 1972] [client ::1:55725] mod_wsgi (pid=8560): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:59:56.879884 2019] [wsgi:error] [pid 8560:tid 1972] [client ::1:55725] Traceback (most recent call last):\r
+[Thu Oct 03 19:59:56.879884 2019] [wsgi:error] [pid 8560:tid 1972] [client ::1:55725]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Thu Oct 03 19:59:56.879884 2019] [wsgi:error] [pid 8560:tid 1972] [client ::1:55725]     from run import app as application\r
+[Thu Oct 03 19:59:56.879884 2019] [wsgi:error] [pid 8560:tid 1972] [client ::1:55725]   File "D:/TdPII\\run.py", line 3, in <module>\r
+[Thu Oct 03 19:59:56.879884 2019] [wsgi:error] [pid 8560:tid 1972] [client ::1:55725]     app.logger.removeHandler(default_handler)\r
+[Thu Oct 03 19:59:56.879884 2019] [wsgi:error] [pid 8560:tid 1972] [client ::1:55725] NameError: name 'app' is not defined\r
+[Thu Oct 03 19:59:56.980879 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:9081] mod_wsgi (pid=8560): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:59:56.980879 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:9081] mod_wsgi (pid=8560): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 03 19:59:56.981881 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:9081] Traceback (most recent call last):\r
+[Thu Oct 03 19:59:56.981881 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:9081]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Thu Oct 03 19:59:56.981881 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:9081]     from run import app as application\r
+[Thu Oct 03 19:59:56.981881 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:9081]   File "D:/TdPII\\run.py", line 3, in <module>\r
+[Thu Oct 03 19:59:56.981881 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:9081]     app.logger.removeHandler(default_handler)\r
+[Thu Oct 03 19:59:56.981881 2019] [wsgi:error] [pid 8560:tid 1988] [client 192.168.1.101:9081] NameError: name 'app' is not defined\r
