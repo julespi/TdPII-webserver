@@ -32,27 +32,36 @@ def prueba():
 def poster():
     if request.method=="GET":
         #try:
-        temp=request.args.get("temp")
-        vol=request.args.get("vol")
         id=request.args.get("id")
-        time=request.args.get("times")
+        if id is None:
+            id = 0
+        time=request.args.get("timestamp")
+        if time is None:
+            time=str("\"1999-01-01 00:00:00\"")
+        vol=request.args.get("vol")
+        if vol is None:
+            vol=0.00
+        temp=request.args.get("temp")
+        if temp is None:
+            temp=0.00
         lat=request.args.get("latitud")
+        if lat is None:
+            lat=0.00
         lon=request.args.get("longitud")
-        #respuesta='Id={}<br/>Time={}<br/>Temperatura={}<br/>Volumen={}'.format(str(id),str(time),str(float(temp)),str(float(vol)))
+        if lon is None:
+            lon=0.00
         cur = mysql.connection.cursor()
-        #cur.execute("INSERT INTO tabla1(id_nodo,timestamp,volumen,temperatura,latitud,longitud)\
-                #VALUES ({},{},{},{},{},{})".format(int(id),str(time),float(str(vol)),float(str(temp)),float(str(lat)),float(str(lon))))
-        cur.execute("INSERT INTO tabla1(id_nodo,timestamp) VALUES ({},{})".format(int(id),str(time)))
+        cur.execute("INSERT INTO tabla1(id_nodo,timestamp,volumen,temperatura,latitud,longitud) VALUES ({},{},{},{},{},{})".format(int(id),str(time),float(vol),float(temp),float(lat),float(lon)))
         mysql.connection.commit()
         cur.close()
-        return "respuesta"
+        return "OK"
         #except:
             #return "get simple"
     else:
         return "falla"
 
 if __name__=="__main__":
-    app.run(host= '192.168.1.105',port=5000,debug="True")
+    app.run(host= '192.168.1.105',port=80,debug="True")
 #     import logging
 #     app.logger.INFO('asd')
 #     logging.basicConfig(filename='errossr.log',level=logging.INFO)

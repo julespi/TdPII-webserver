@@ -848,3 +848,243 @@
 [Sun Oct 06 20:35:30.984032 2019] [wsgi:error] [pid 1536:tid 1984] [client 192.168.1.106:50743]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://192.168.1.105/phpmyadmin
 [Sun Oct 06 20:35:30.984032 2019] [wsgi:error] [pid 1536:tid 1984] [client 192.168.1.106:50743]     from flask_mysqldb import MySQL\r, referer: http://192.168.1.105/phpmyadmin
 [Sun Oct 06 20:35:30.984032 2019] [wsgi:error] [pid 1536:tid 1984] [client 192.168.1.106:50743] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://192.168.1.105/phpmyadmin
+[Wed Oct 09 18:11:34.979415 2019] [wsgi:error] [pid 9104:tid 1996] [client ::1:55754] mod_wsgi (pid=9104): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:11:34.979415 2019] [wsgi:error] [pid 9104:tid 1996] [client ::1:55754] mod_wsgi (pid=9104): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:11:34.980411 2019] [wsgi:error] [pid 9104:tid 1996] [client ::1:55754] Traceback (most recent call last):\r
+[Wed Oct 09 18:11:34.980411 2019] [wsgi:error] [pid 9104:tid 1996] [client ::1:55754]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:11:34.980411 2019] [wsgi:error] [pid 9104:tid 1996] [client ::1:55754]     from run import app as application\r
+[Wed Oct 09 18:11:34.980411 2019] [wsgi:error] [pid 9104:tid 1996] [client ::1:55754]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:11:34.980411 2019] [wsgi:error] [pid 9104:tid 1996] [client ::1:55754]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:11:34.980411 2019] [wsgi:error] [pid 9104:tid 1996] [client ::1:55754] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:11:35.295414 2019] [wsgi:error] [pid 9104:tid 2000] [client ::1:55753] mod_wsgi (pid=9104): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:11:35.295414 2019] [wsgi:error] [pid 9104:tid 2000] [client ::1:55753] mod_wsgi (pid=9104): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:11:35.296428 2019] [wsgi:error] [pid 9104:tid 2000] [client ::1:55753] Traceback (most recent call last):\r, referer: http://localhost/
+[Wed Oct 09 18:11:35.296428 2019] [wsgi:error] [pid 9104:tid 2000] [client ::1:55753]   File "D:/TdPII/web.wsgi", line 5, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:11:35.296428 2019] [wsgi:error] [pid 9104:tid 2000] [client ::1:55753]     from run import app as application\r, referer: http://localhost/
+[Wed Oct 09 18:11:35.296428 2019] [wsgi:error] [pid 9104:tid 2000] [client ::1:55753]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:11:35.296428 2019] [wsgi:error] [pid 9104:tid 2000] [client ::1:55753]     from flask_mysqldb import MySQL\r, referer: http://localhost/
+[Wed Oct 09 18:11:35.296428 2019] [wsgi:error] [pid 9104:tid 2000] [client ::1:55753] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://localhost/
+[Wed Oct 09 18:28:24.724076 2019] [wsgi:error] [pid 3716:tid 1984] [client ::1:56048] mod_wsgi (pid=3716): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:28:24.724076 2019] [wsgi:error] [pid 3716:tid 1984] [client ::1:56048] mod_wsgi (pid=3716): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:28:24.726088 2019] [wsgi:error] [pid 3716:tid 1984] [client ::1:56048] Traceback (most recent call last):\r
+[Wed Oct 09 18:28:24.726088 2019] [wsgi:error] [pid 3716:tid 1984] [client ::1:56048]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:28:24.726088 2019] [wsgi:error] [pid 3716:tid 1984] [client ::1:56048]     from run import app as application\r
+[Wed Oct 09 18:28:24.726088 2019] [wsgi:error] [pid 3716:tid 1984] [client ::1:56048]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:28:24.726088 2019] [wsgi:error] [pid 3716:tid 1984] [client ::1:56048]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:28:24.726088 2019] [wsgi:error] [pid 3716:tid 1984] [client ::1:56048] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:28:24.851076 2019] [wsgi:error] [pid 3716:tid 1992] [client ::1:56047] mod_wsgi (pid=3716): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:28:24.851076 2019] [wsgi:error] [pid 3716:tid 1992] [client ::1:56047] mod_wsgi (pid=3716): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:28:24.851076 2019] [wsgi:error] [pid 3716:tid 1992] [client ::1:56047] Traceback (most recent call last):\r, referer: http://localhost/
+[Wed Oct 09 18:28:24.851076 2019] [wsgi:error] [pid 3716:tid 1992] [client ::1:56047]   File "D:/TdPII/web.wsgi", line 5, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:28:24.851076 2019] [wsgi:error] [pid 3716:tid 1992] [client ::1:56047]     from run import app as application\r, referer: http://localhost/
+[Wed Oct 09 18:28:24.851076 2019] [wsgi:error] [pid 3716:tid 1992] [client ::1:56047]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:28:24.851076 2019] [wsgi:error] [pid 3716:tid 1992] [client ::1:56047]     from flask_mysqldb import MySQL\r, referer: http://localhost/
+[Wed Oct 09 18:28:24.851076 2019] [wsgi:error] [pid 3716:tid 1992] [client ::1:56047] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://localhost/
+[Wed Oct 09 18:33:10.876206 2019] [wsgi:error] [pid 12680:tid 1988] [client ::1:56113] mod_wsgi (pid=12680): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:33:10.877205 2019] [wsgi:error] [pid 12680:tid 1988] [client ::1:56113] mod_wsgi (pid=12680): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:33:10.877205 2019] [wsgi:error] [pid 12680:tid 1988] [client ::1:56113] Traceback (most recent call last):\r
+[Wed Oct 09 18:33:10.877205 2019] [wsgi:error] [pid 12680:tid 1988] [client ::1:56113]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:33:10.877205 2019] [wsgi:error] [pid 12680:tid 1988] [client ::1:56113]     from run import app as application\r
+[Wed Oct 09 18:33:10.877205 2019] [wsgi:error] [pid 12680:tid 1988] [client ::1:56113]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:33:10.877205 2019] [wsgi:error] [pid 12680:tid 1988] [client ::1:56113]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:33:10.877205 2019] [wsgi:error] [pid 12680:tid 1988] [client ::1:56113] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:33:10.978205 2019] [wsgi:error] [pid 12680:tid 1992] [client ::1:56112] mod_wsgi (pid=12680): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:33:10.978205 2019] [wsgi:error] [pid 12680:tid 1992] [client ::1:56112] mod_wsgi (pid=12680): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:33:10.978205 2019] [wsgi:error] [pid 12680:tid 1992] [client ::1:56112] Traceback (most recent call last):\r, referer: http://localhost/
+[Wed Oct 09 18:33:10.978205 2019] [wsgi:error] [pid 12680:tid 1992] [client ::1:56112]   File "D:/TdPII/web.wsgi", line 5, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:33:10.978205 2019] [wsgi:error] [pid 12680:tid 1992] [client ::1:56112]     from run import app as application\r, referer: http://localhost/
+[Wed Oct 09 18:33:10.978205 2019] [wsgi:error] [pid 12680:tid 1992] [client ::1:56112]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:33:10.978205 2019] [wsgi:error] [pid 12680:tid 1992] [client ::1:56112]     from flask_mysqldb import MySQL\r, referer: http://localhost/
+[Wed Oct 09 18:33:10.978205 2019] [wsgi:error] [pid 12680:tid 1992] [client ::1:56112] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://localhost/
+[Wed Oct 09 18:39:00.220638 2019] [wsgi:error] [pid 6476:tid 1996] [client ::1:56147] mod_wsgi (pid=6476): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:39:00.220638 2019] [wsgi:error] [pid 6476:tid 1996] [client ::1:56147] mod_wsgi (pid=6476): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:39:00.222640 2019] [wsgi:error] [pid 6476:tid 1996] [client ::1:56147] Traceback (most recent call last):\r
+[Wed Oct 09 18:39:00.222640 2019] [wsgi:error] [pid 6476:tid 1996] [client ::1:56147]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:39:00.222640 2019] [wsgi:error] [pid 6476:tid 1996] [client ::1:56147]     from run import app as application\r
+[Wed Oct 09 18:39:00.222640 2019] [wsgi:error] [pid 6476:tid 1996] [client ::1:56147]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:39:00.222640 2019] [wsgi:error] [pid 6476:tid 1996] [client ::1:56147]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:39:00.222640 2019] [wsgi:error] [pid 6476:tid 1996] [client ::1:56147] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:39:00.337637 2019] [wsgi:error] [pid 6476:tid 2000] [client ::1:56146] mod_wsgi (pid=6476): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:39:00.337637 2019] [wsgi:error] [pid 6476:tid 2000] [client ::1:56146] mod_wsgi (pid=6476): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:39:00.337637 2019] [wsgi:error] [pid 6476:tid 2000] [client ::1:56146] Traceback (most recent call last):\r, referer: http://localhost/
+[Wed Oct 09 18:39:00.337637 2019] [wsgi:error] [pid 6476:tid 2000] [client ::1:56146]   File "D:/TdPII/web.wsgi", line 5, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:39:00.338636 2019] [wsgi:error] [pid 6476:tid 2000] [client ::1:56146]     from run import app as application\r, referer: http://localhost/
+[Wed Oct 09 18:39:00.338636 2019] [wsgi:error] [pid 6476:tid 2000] [client ::1:56146]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:39:00.338636 2019] [wsgi:error] [pid 6476:tid 2000] [client ::1:56146]     from flask_mysqldb import MySQL\r, referer: http://localhost/
+[Wed Oct 09 18:39:00.338636 2019] [wsgi:error] [pid 6476:tid 2000] [client ::1:56146] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://localhost/
+[Wed Oct 09 18:42:16.973422 2019] [wsgi:error] [pid 9284:tid 1976] [client ::1:56163] mod_wsgi (pid=9284): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:42:16.973422 2019] [wsgi:error] [pid 9284:tid 1976] [client ::1:56163] mod_wsgi (pid=9284): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:42:16.974421 2019] [wsgi:error] [pid 9284:tid 1976] [client ::1:56163] Traceback (most recent call last):\r
+[Wed Oct 09 18:42:16.974421 2019] [wsgi:error] [pid 9284:tid 1976] [client ::1:56163]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:42:16.974421 2019] [wsgi:error] [pid 9284:tid 1976] [client ::1:56163]     from run import app as application\r
+[Wed Oct 09 18:42:16.974421 2019] [wsgi:error] [pid 9284:tid 1976] [client ::1:56163]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:42:16.974421 2019] [wsgi:error] [pid 9284:tid 1976] [client ::1:56163]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:42:16.974421 2019] [wsgi:error] [pid 9284:tid 1976] [client ::1:56163] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:42:17.048421 2019] [wsgi:error] [pid 9284:tid 1984] [client ::1:56162] mod_wsgi (pid=9284): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:42:17.048421 2019] [wsgi:error] [pid 9284:tid 1984] [client ::1:56162] mod_wsgi (pid=9284): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:42:17.048421 2019] [wsgi:error] [pid 9284:tid 1984] [client ::1:56162] Traceback (most recent call last):\r, referer: http://localhost/
+[Wed Oct 09 18:42:17.048421 2019] [wsgi:error] [pid 9284:tid 1984] [client ::1:56162]   File "D:/TdPII/web.wsgi", line 5, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:42:17.048421 2019] [wsgi:error] [pid 9284:tid 1984] [client ::1:56162]     from run import app as application\r, referer: http://localhost/
+[Wed Oct 09 18:42:17.048421 2019] [wsgi:error] [pid 9284:tid 1984] [client ::1:56162]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:42:17.048421 2019] [wsgi:error] [pid 9284:tid 1984] [client ::1:56162]     from flask_mysqldb import MySQL\r, referer: http://localhost/
+[Wed Oct 09 18:42:17.048421 2019] [wsgi:error] [pid 9284:tid 1984] [client ::1:56162] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://localhost/
+[Wed Oct 09 18:49:32.412304 2019] [wsgi:error] [pid 6128:tid 1984] [client ::1:56251] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:49:32.412304 2019] [wsgi:error] [pid 6128:tid 1984] [client ::1:56251] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:49:32.413303 2019] [wsgi:error] [pid 6128:tid 1984] [client ::1:56251] Traceback (most recent call last):\r
+[Wed Oct 09 18:49:32.413303 2019] [wsgi:error] [pid 6128:tid 1984] [client ::1:56251]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:49:32.413303 2019] [wsgi:error] [pid 6128:tid 1984] [client ::1:56251]     from run import app as application\r
+[Wed Oct 09 18:49:32.413303 2019] [wsgi:error] [pid 6128:tid 1984] [client ::1:56251]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:49:32.413303 2019] [wsgi:error] [pid 6128:tid 1984] [client ::1:56251]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:49:32.413303 2019] [wsgi:error] [pid 6128:tid 1984] [client ::1:56251] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:49:32.525304 2019] [wsgi:error] [pid 6128:tid 1980] [client ::1:56252] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:49:32.525304 2019] [wsgi:error] [pid 6128:tid 1980] [client ::1:56252] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 18:49:32.526308 2019] [wsgi:error] [pid 6128:tid 1980] [client ::1:56252] Traceback (most recent call last):\r, referer: http://localhost/
+[Wed Oct 09 18:49:32.526308 2019] [wsgi:error] [pid 6128:tid 1980] [client ::1:56252]   File "D:/TdPII/web.wsgi", line 5, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:49:32.526308 2019] [wsgi:error] [pid 6128:tid 1980] [client ::1:56252]     from run import app as application\r, referer: http://localhost/
+[Wed Oct 09 18:49:32.526308 2019] [wsgi:error] [pid 6128:tid 1980] [client ::1:56252]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://localhost/
+[Wed Oct 09 18:49:32.526308 2019] [wsgi:error] [pid 6128:tid 1980] [client ::1:56252]     from flask_mysqldb import MySQL\r, referer: http://localhost/
+[Wed Oct 09 18:49:32.526308 2019] [wsgi:error] [pid 6128:tid 1980] [client ::1:56252] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://localhost/
+[Wed Oct 09 18:52:05.792322 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7498] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:05.792322 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7498] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:05.792322 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7498] Traceback (most recent call last):\r
+[Wed Oct 09 18:52:05.792322 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7498]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:52:05.792322 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7498]     from run import app as application\r
+[Wed Oct 09 18:52:05.792322 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7498]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:52:05.792322 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7498]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:52:05.792322 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7498] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:52:16.238953 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7519] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:16.238953 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7519] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:16.238953 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7519] Traceback (most recent call last):\r
+[Wed Oct 09 18:52:16.238953 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7519]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:52:16.238953 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7519]     from run import app as application\r
+[Wed Oct 09 18:52:16.238953 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7519]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:52:16.238953 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7519]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:52:16.238953 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:7519] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:52:26.727659 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:33690] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:26.727659 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:33690] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:26.727659 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:33690] Traceback (most recent call last):\r
+[Wed Oct 09 18:52:26.727659 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:33690]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:52:26.727659 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:33690]     from run import app as application\r
+[Wed Oct 09 18:52:26.727659 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:33690]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:52:26.727659 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:33690]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:52:26.728658 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:33690] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:52:37.191639 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:12285] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:37.191639 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:12285] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:37.191639 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:12285] Traceback (most recent call last):\r
+[Wed Oct 09 18:52:37.191639 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:12285]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:52:37.191639 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:12285]     from run import app as application\r
+[Wed Oct 09 18:52:37.191639 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:12285]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:52:37.191639 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:12285]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:52:37.191639 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:12285] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:52:47.686164 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:49599] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:47.686164 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:49599] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:47.687160 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:49599] Traceback (most recent call last):\r
+[Wed Oct 09 18:52:47.687160 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:49599]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:52:47.687160 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:49599]     from run import app as application\r
+[Wed Oct 09 18:52:47.688171 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:49599]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:52:47.688171 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:49599]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:52:47.688171 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:49599] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:52:58.154848 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:44659] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:58.154848 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:44659] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:52:58.154848 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:44659] Traceback (most recent call last):\r
+[Wed Oct 09 18:52:58.154848 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:44659]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:52:58.154848 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:44659]     from run import app as application\r
+[Wed Oct 09 18:52:58.154848 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:44659]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:52:58.154848 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:44659]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:52:58.154848 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.101:44659] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:53:08.641389 2019] [wsgi:error] [pid 6128:tid 1936] [client 192.168.1.101:21027] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:08.641389 2019] [wsgi:error] [pid 6128:tid 1936] [client 192.168.1.101:21027] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:08.641389 2019] [wsgi:error] [pid 6128:tid 1936] [client 192.168.1.101:21027] Traceback (most recent call last):\r
+[Wed Oct 09 18:53:08.641389 2019] [wsgi:error] [pid 6128:tid 1936] [client 192.168.1.101:21027]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:53:08.641389 2019] [wsgi:error] [pid 6128:tid 1936] [client 192.168.1.101:21027]     from run import app as application\r
+[Wed Oct 09 18:53:08.641389 2019] [wsgi:error] [pid 6128:tid 1936] [client 192.168.1.101:21027]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:53:08.641389 2019] [wsgi:error] [pid 6128:tid 1936] [client 192.168.1.101:21027]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:53:08.641389 2019] [wsgi:error] [pid 6128:tid 1936] [client 192.168.1.101:21027] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:53:19.125753 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:31433] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:19.125753 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:31433] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:19.125753 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:31433] Traceback (most recent call last):\r
+[Wed Oct 09 18:53:19.125753 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:31433]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:53:19.125753 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:31433]     from run import app as application\r
+[Wed Oct 09 18:53:19.125753 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:31433]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:53:19.125753 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:31433]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:53:19.125753 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:31433] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:53:29.596232 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:19468] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:29.596232 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:19468] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:29.596232 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:19468] Traceback (most recent call last):\r
+[Wed Oct 09 18:53:29.596232 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:19468]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:53:29.596232 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:19468]     from run import app as application\r
+[Wed Oct 09 18:53:29.596232 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:19468]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:53:29.596232 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:19468]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:53:29.596232 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:19468] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:53:40.074277 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:39713] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:40.074277 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:39713] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:40.074277 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:39713] Traceback (most recent call last):\r
+[Wed Oct 09 18:53:40.074277 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:39713]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:53:40.074277 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:39713]     from run import app as application\r
+[Wed Oct 09 18:53:40.074277 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:39713]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:53:40.074277 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:39713]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:53:40.074277 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:39713] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:53:50.560218 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:48850] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:50.560218 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:48850] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:53:50.560218 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:48850] Traceback (most recent call last):\r
+[Wed Oct 09 18:53:50.560218 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:48850]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:53:50.560218 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:48850]     from run import app as application\r
+[Wed Oct 09 18:53:50.561218 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:48850]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:53:50.561218 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:48850]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:53:50.561218 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:48850] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:54:01.038108 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:25929] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:54:01.038108 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:25929] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:54:01.038108 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:25929] Traceback (most recent call last):\r
+[Wed Oct 09 18:54:01.038108 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:25929]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:54:01.038108 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:25929]     from run import app as application\r
+[Wed Oct 09 18:54:01.038108 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:25929]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:54:01.038108 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:25929]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:54:01.038108 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:25929] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:54:11.524797 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:34377] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:54:11.524797 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:34377] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:54:11.525797 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:34377] Traceback (most recent call last):\r
+[Wed Oct 09 18:54:11.525797 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:34377]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:54:11.525797 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:34377]     from run import app as application\r
+[Wed Oct 09 18:54:11.525797 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:34377]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:54:11.525797 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:34377]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:54:11.525797 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:34377] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 18:54:21.983275 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:45587] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:54:21.983275 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:45587] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 18:54:21.983275 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:45587] Traceback (most recent call last):\r
+[Wed Oct 09 18:54:21.983275 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:45587]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 18:54:21.983275 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:45587]     from run import app as application\r
+[Wed Oct 09 18:54:21.983275 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:45587]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 18:54:21.983275 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:45587]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 18:54:21.983275 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.101:45587] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 19:10:50.665213 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.106:50732] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 19:10:50.665213 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.106:50732] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 19:10:50.666198 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.106:50732] Traceback (most recent call last):\r
+[Wed Oct 09 19:10:50.666198 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.106:50732]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 19:10:50.666198 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.106:50732]     from run import app as application\r
+[Wed Oct 09 19:10:50.666198 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.106:50732]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 19:10:50.667198 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.106:50732]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 19:10:50.667198 2019] [wsgi:error] [pid 6128:tid 1980] [client 192.168.1.106:50732] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 19:10:50.904514 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.106:50733] mod_wsgi (pid=6128): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://192.168.1.105/poster
+[Wed Oct 09 19:10:50.904514 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.106:50733] mod_wsgi (pid=6128): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://192.168.1.105/poster
+[Wed Oct 09 19:10:50.904514 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.106:50733] Traceback (most recent call last):\r, referer: http://192.168.1.105/poster
+[Wed Oct 09 19:10:50.904514 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.106:50733]   File "D:/TdPII/web.wsgi", line 5, in <module>\r, referer: http://192.168.1.105/poster
+[Wed Oct 09 19:10:50.904514 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.106:50733]     from run import app as application\r, referer: http://192.168.1.105/poster
+[Wed Oct 09 19:10:50.904514 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.106:50733]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://192.168.1.105/poster
+[Wed Oct 09 19:10:50.904514 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.106:50733]     from flask_mysqldb import MySQL\r, referer: http://192.168.1.105/poster
+[Wed Oct 09 19:10:50.904514 2019] [wsgi:error] [pid 6128:tid 1956] [client 192.168.1.106:50733] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://192.168.1.105/poster
+[Wed Oct 09 19:11:10.769756 2019] [wsgi:error] [pid 7916:tid 1976] [client ::1:56497] mod_wsgi (pid=7916): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 19:11:10.769756 2019] [wsgi:error] [pid 7916:tid 1976] [client ::1:56497] mod_wsgi (pid=7916): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Wed Oct 09 19:11:10.771774 2019] [wsgi:error] [pid 7916:tid 1976] [client ::1:56497] Traceback (most recent call last):\r
+[Wed Oct 09 19:11:10.771774 2019] [wsgi:error] [pid 7916:tid 1976] [client ::1:56497]   File "D:/TdPII/web.wsgi", line 5, in <module>\r
+[Wed Oct 09 19:11:10.771774 2019] [wsgi:error] [pid 7916:tid 1976] [client ::1:56497]     from run import app as application\r
+[Wed Oct 09 19:11:10.772768 2019] [wsgi:error] [pid 7916:tid 1976] [client ::1:56497]   File "D:/TdPII\\run.py", line 2, in <module>\r
+[Wed Oct 09 19:11:10.772768 2019] [wsgi:error] [pid 7916:tid 1976] [client ::1:56497]     from flask_mysqldb import MySQL\r
+[Wed Oct 09 19:11:10.772768 2019] [wsgi:error] [pid 7916:tid 1976] [client ::1:56497] ModuleNotFoundError: No module named 'flask_mysqldb'\r
+[Wed Oct 09 19:11:11.562735 2019] [wsgi:error] [pid 7916:tid 1984] [client ::1:56496] mod_wsgi (pid=7916): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 19:11:11.562735 2019] [wsgi:error] [pid 7916:tid 1984] [client ::1:56496] mod_wsgi (pid=7916): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Wed Oct 09 19:11:11.563734 2019] [wsgi:error] [pid 7916:tid 1984] [client ::1:56496] Traceback (most recent call last):\r, referer: http://localhost/
+[Wed Oct 09 19:11:11.563734 2019] [wsgi:error] [pid 7916:tid 1984] [client ::1:56496]   File "D:/TdPII/web.wsgi", line 5, in <module>\r, referer: http://localhost/
+[Wed Oct 09 19:11:11.563734 2019] [wsgi:error] [pid 7916:tid 1984] [client ::1:56496]     from run import app as application\r, referer: http://localhost/
+[Wed Oct 09 19:11:11.563734 2019] [wsgi:error] [pid 7916:tid 1984] [client ::1:56496]   File "D:/TdPII\\run.py", line 2, in <module>\r, referer: http://localhost/
+[Wed Oct 09 19:11:11.563734 2019] [wsgi:error] [pid 7916:tid 1984] [client ::1:56496]     from flask_mysqldb import MySQL\r, referer: http://localhost/
+[Wed Oct 09 19:11:11.563734 2019] [wsgi:error] [pid 7916:tid 1984] [client ::1:56496] ModuleNotFoundError: No module named 'flask_mysqldb'\r, referer: http://localhost/
