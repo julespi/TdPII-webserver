@@ -61,9 +61,9 @@ def poster():
         return "falla"
 
 if __name__=="__main__":
-    app.run(host= '192.168.1.105',port=80,debug="True")
+    app.run(debug="True")
 #     import logging
 #     app.logger.INFO('asd')
 #     logging.basicConfig(filename='errossr.log',level=logging.INFO)
 
-    
+    #app.run(host= '192.168.1.105',port=80,debug="True")
