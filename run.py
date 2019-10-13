@@ -1,57 +1,54 @@
 from flask import Flask, request, render_template
-from flask_mysqldb import MySQL
+#from flask_mysqldb import MySQL
+from flask_sqlalchemy import SQLAlchemy
 
 
-#mysql = MySQL()
 app = Flask(__name__)
-mysql = MySQL()
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://usuario:asdasd@localhost/db_prueba'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 
-app.config['MYSQL_USER'] = 'usuario'
-app.config['MYSQL_PASSWORD'] = 'asdasd'
-app.config['MYSQL_DB'] = 'db_prueba'
-app.config['MYSQL_HOST'] = 'localhost'
-mysql.init_app(app)
+class Datos(db.Model):
+    __tablename__ = 'tabla1'
+    #id_nodo,timestamp,volumen,temperatura,latitud,longitud
+    id=db.Column("id",db.INTEGER, primary_key=True)
+    nodo=db.Column("nodo",db.INTEGER)
+    time=db.Column("timestamp",db.DATETIME)
+    vol=db.Column("volumen",db.Numeric(5,3))
+    temp=db.Column("temperatura",db.Numeric(3,3))
+    lat=db.Column("latitud",db.Numeric(1,10))
+    lon=db.Column("longitud",db.Numeric(1,10))
+
+
+    def __init__(self,nodo,time,vol,temp,lat,lon):
+        self.nodo=nodo
+        self.time=time
+        self.vol=vol
+        self.temp=temp
+        self.lat=lat
+        self.lon=lon      
 
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template("index.html")
 
-@app.route("/prueba")
-def prueba():
-    return "Listo"
+@app.route("/mostrar")
+def mostrar():
+    return render_template('show_all.html', tabla = Datos.query.all() )
 
 @app.route('/poster',methods=["GET"])
 def poster():
-    if request.method=="GET":
-        #try:
-        id=request.args.get("id")
-        if id is None:
-            id = 0
-        time=request.args.get("timestamp")
-        if time is None:
-            time=str("\"1999-01-01 00:00:00\"")
-        vol=request.args.get("vol")
-        if vol is None:
-            vol=0.00
-        temp=request.args.get("temp")
-        if temp is None:
-            temp=0.00
-        lat=request.args.get("latitud")
-        if lat is None:
-            lat=0.00
-        lon=request.args.get("longitud")
-        if lon is None:
-            lon=0.00
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO tabla1(id_nodo,timestamp,volumen,temperatura,latitud,longitud) VALUES ({},{},{},{},{},{})".format(int(id),str(time),float(vol),float(temp),float(lat),float(lon)))
-        mysql.connection.commit()
-        cur.close()
-        return "OK"
-        #except:
-            #return "get simple"
-    else:
-        return "falla"
+    nodo=request.args.get("id")
+    time=request.args.get("timestamp")
+    vol=request.args.get("vol")
+    temp=request.args.get("temp")
+    lat=request.args.get("lat")
+    lon=request.args.get("lon")
+    algo=Datos(nodo,time,vol,temp,lat,lon)
+    db.session.add(algo)
+    db.session.commit()
+    return "listo"
 
 if __name__=="__main__":
     app.run(debug="True")
