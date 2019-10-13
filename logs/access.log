@@ -1731,3 +1731,14 @@
 ::1 - - [10/Oct/2019:18:42:50 -0300] "GET /favicon.ico HTTP/1.1" 500 1310
 ::1 - - [10/Oct/2019:18:54:36 -0300] "GET / HTTP/1.1" 500 1310
 ::1 - - [10/Oct/2019:18:54:36 -0300] "GET /favicon.ico HTTP/1.1" 500 1310
+::1 - - [10/Oct/2019:19:04:53 -0300] "GET / HTTP/1.1" 200 15
+::1 - - [10/Oct/2019:19:04:54 -0300] "GET /favicon.ico HTTP/1.1" 404 232
+::1 - - [10/Oct/2019:19:05:13 -0300] "GET /poster?id=15 HTTP/1.1" 200 2
+::1 - - [10/Oct/2019:19:05:16 -0300] "GET /phpmyadmin/sql.php?db=db_prueba&table=tabla1&pos=0 HTTP/1.1" 200 17204
+::1 - - [10/Oct/2019:19:05:17 -0300] "GET /phpmyadmin/phpmyadmin.css.php?nocache=6137243158ltr&server=1 HTTP/1.1" 200 20812
+::1 - - [10/Oct/2019:19:05:18 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1432
+::1 - - [10/Oct/2019:19:05:18 -0300] "POST /phpmyadmin/navigation.php?ajax_request=1 HTTP/1.1" 200 2472
+::1 - - [10/Oct/2019:19:05:18 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1528
+::1 - - [10/Oct/2019:19:05:19 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1423
+::1 - - [10/Oct/2019:19:05:19 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1570745119308556424&token=Q%2Fx3o.%25c%3FfyxVG%3F%3E HTTP/1.1" 200 1481
+::1 - - [10/Oct/2019:19:05:20 -0300] "GET /phpmyadmin/favicon.ico HTTP/1.1" 200 22486
