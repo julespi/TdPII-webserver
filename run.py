@@ -6,6 +6,7 @@ from flask_mysqldb import MySQL
 #from flask import render_template
 #mysql = MySQL()
 app = Flask(__name__)
+
 mysql = MySQL()
 
 app.config['MYSQL_USER'] = 'usuario'
