@@ -1,12 +1,9 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_mysqldb import MySQL
-#import logging
 
 
-#from flask import render_template
 #mysql = MySQL()
 app = Flask(__name__)
-
 mysql = MySQL()
 
 app.config['MYSQL_USER'] = 'usuario'
@@ -18,15 +15,10 @@ mysql.init_app(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    #app.logger.info('Info')
-    return 'Pagina de Index'
+    return render_template("index.html")
 
 @app.route("/prueba")
 def prueba():
-    cur = mysql.connection.cursor()
-    cur.execute("INSERT INTO tabla1(id_nodo,volumen,temperatura) VALUES (1,56.58,12.3)")
-    mysql.connection.commit()
-    cur.close()
     return "Listo"
 
 @app.route('/poster',methods=["GET"])

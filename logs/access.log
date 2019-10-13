@@ -1742,3 +1742,8 @@
 ::1 - - [10/Oct/2019:19:05:19 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1423
 ::1 - - [10/Oct/2019:19:05:19 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1570745119308556424&token=Q%2Fx3o.%25c%3FfyxVG%3F%3E HTTP/1.1" 200 1481
 ::1 - - [10/Oct/2019:19:05:20 -0300] "GET /phpmyadmin/favicon.ico HTTP/1.1" 200 22486
+::1 - - [13/Oct/2019:15:38:39 -0300] "GET / HTTP/1.1" 200 15
+::1 - - [13/Oct/2019:15:38:43 -0300] "GET /favicon.ico HTTP/1.1" 404 232
+::1 - - [13/Oct/2019:15:52:44 -0300] "GET / HTTP/1.1" 200 15
+::1 - - [13/Oct/2019:15:53:03 -0300] "GET / HTTP/1.1" 500 290
+::1 - - [13/Oct/2019:15:59:23 -0300] "GET / HTTP/1.1" 200 94
