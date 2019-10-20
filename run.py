@@ -1,32 +1,14 @@
 from flask import Flask, request, render_template
-#from flask_mysqldb import MySQL
 from flask_sqlalchemy import SQLAlchemy
+from basedatos import db, Datos, Nodo
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://usuario:asdasd@localhost/db_prueba'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://usuario:asdasd@localhost/g20_tdp2'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-class Datos(db.Model):
-    __tablename__ = 'tabla1'
-    #id_nodo,timestamp,volumen,temperatura,latitud,longitud
-    id=db.Column("id",db.INTEGER, primary_key=True)
-    nodo=db.Column("nodo",db.INTEGER)
-    time=db.Column("timestamp",db.DATETIME)
-    vol=db.Column("volumen",db.Numeric(5,3))
-    temp=db.Column("temperatura",db.Numeric(3,3))
-    lat=db.Column("latitud",db.Numeric(1,10))
-    lon=db.Column("longitud",db.Numeric(1,10))
 
-
-    def __init__(self,nodo,time,vol,temp,lat,lon):
-        self.nodo=nodo
-        self.time=time
-        self.vol=vol
-        self.temp=temp
-        self.lat=lat
-        self.lon=lon      
 
 @app.route('/')
 @app.route('/index')
@@ -35,17 +17,19 @@ def index():
 
 @app.route("/mostrar")
 def mostrar():
-    return render_template('show_all.html', tabla = Datos.query.all() )
+    return render_template('show_all.html', tabla=Datos.query.all(),nodos=Nodo.query.all() )
 
-@app.route('/poster',methods=["GET"])
+@app.route('/poster', methods=["GET"])
 def poster():
-    nodo=request.args.get("id")
-    time=request.args.get("timestamp")
-    vol=request.args.get("vol")
-    temp=request.args.get("temp")
-    lat=request.args.get("lat")
-    lon=request.args.get("lon")
-    algo=Datos(nodo,time,vol,temp,lat,lon)
+    #nodo=4&timestamp=%222019-10-09%2018:59:00%22&temp=20.00&vol=0.00&lat=34.91&long=57.96&evento=0
+    nodo = request.args.get("nodo")
+    time = request.args.get("timestamp")
+    vol = request.args.get("vol")
+    temp = request.args.get("temp")
+    lat = request.args.get("lat")
+    lon = request.args.get("long")
+    evento = request.args.get("evento")
+    algo = Datos(nodo, time, vol, temp, lat, lon, evento)
     db.session.add(algo)
     db.session.commit()
     return "listo"

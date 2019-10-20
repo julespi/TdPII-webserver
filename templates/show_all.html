@@ -1,20 +1,46 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../static/estilo.css">
 <html lang = "en">
    <head></head>
    <body>    
 		
-      <h1>Datos</h1>
-      
-      <table>
+      <h2>Nodos</h2>
+      <table class="mostrarTodo">
          <thead>
             <tr>
-               <th>Id</th>
-               <th>Nodo</th>
-               <th>Timestamp</th>
-               <th>Volumen</th>
-               <th>Temperatura</th>
-               <th>Latitud</th>
-               <th>Longitud</th>
+               <th>Id    </th>
+               <th>Nodo    </th>
+               <th>Cliente    </th>
+               <th>Firmware    </th>
+               <th>Nombre    </th>
+               <th>Descripcion    </th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for temp in nodos %}
+               <tr>
+                  <td>{{ temp.id }}</td>
+                  <td>{{ temp.nodo }}</td>
+                  <td>{{ temp.cliente}}</td>
+                  <td>{{ temp.firmware}}</td>
+                  <td>{{ temp.nombre}}</td>
+                  <td>{{ temp.descripcion}}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      <h2>Datos</h2>
+      <table class="mostrarTodo">
+         <thead>
+            <tr>
+               <th>Id    </th>
+               <th>Nodo    </th>
+               <th>Timestamp    </th>
+               <th>Volumen    </th>
+               <th>Temperatura    </th>
+               <th>Latitud    </th>
+               <th>Longitud    </th>
             </tr>
          </thead>
 
