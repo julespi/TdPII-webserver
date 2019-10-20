@@ -34,6 +34,25 @@ def poster():
     db.session.commit()
     return "listo"
 
+@app.route('/version', methods=["GET"])
+def version():
+    #nodo=4&timestamp=%222019-10-09%2018:59:00%22&temp=20.00&vol=0.00&lat=34.91&long=57.96&evento=0
+    nodo = request.args.get("nodo")
+    print(nodo)
+    firm = request.args.get("firmware")
+    print(firm)
+    time = request.args.get("timestamp")
+    print(time)
+    # nodo_act = db.session.query(Nodo).filter(Nodo.id == nodo)
+    # nodo_act.firmware = firm
+    # nodo_act.timestamp_fm = time
+    # db.session.commit()
+    nodo_act = Nodo.query.get(1)
+    nodo_act.firmware = firm
+    nodo_act.timestamp_fm = time
+    db.session.add(nodo_act)
+    db.session.commit()
+
 if __name__=="__main__":
     app.run(debug="True")
 #     import logging

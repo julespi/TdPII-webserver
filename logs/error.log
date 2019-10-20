@@ -6378,3 +6378,343 @@
 [Sun Oct 20 18:54:42.033720 2019] [wsgi:error] [pid 4732:tid 1952] [client 192.168.1.110:12989] [SQL: INSERT INTO datos (id_nodo, timestamp, volumen, temperatura, latitud, longitud) VALUES (%s, %s, %s, %s, %s, %s)]\r
 [Sun Oct 20 18:54:42.033720 2019] [wsgi:error] [pid 4732:tid 1952] [client 192.168.1.110:12989] [parameters: ('4', '"2019-10-09 18:59:00"', '0.00', '20.00', '34.91', '57.96')]\r
 [Sun Oct 20 18:54:42.033720 2019] [wsgi:error] [pid 4732:tid 1952] [client 192.168.1.110:12989] (Background on this error at: http://sqlalche.me/e/gkpj)\r
+[Sun Oct 20 19:53:20.189826 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829] [2019-10-20 19:53:20,185] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829] Traceback (most recent call last):\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1955, in add\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     state = attributes.instance_state(instance)\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829] AttributeError: 'BaseQuery' object has no attribute '_sa_instance_state'\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829] \r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829] During handling of the above exception, another exception occurred:\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829] \r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829] Traceback (most recent call last):\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     response = self.full_dispatch_request()\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     raise value\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     rv = self.dispatch_request()\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:/TdPII\\run.py", line 46, in version\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     db.session.add(nodo_act)\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     return getattr(self.registry(), name)(*args, **kwargs)\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1957, in add\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829]     raise exc.UnmappedInstanceError(instance)\r
+[Sun Oct 20 19:53:20.190825 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:38829] sqlalchemy.orm.exc.UnmappedInstanceError: Class 'flask_sqlalchemy.BaseQuery' is not mapped\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189] [2019-10-20 19:54:00,523] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189] Traceback (most recent call last):\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1955, in add\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     state = attributes.instance_state(instance)\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189] AttributeError: 'BaseQuery' object has no attribute '_sa_instance_state'\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189] \r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189] During handling of the above exception, another exception occurred:\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189] \r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189] Traceback (most recent call last):\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     response = self.full_dispatch_request()\r
+[Sun Oct 20 19:54:00.524673 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     raise value\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     rv = self.dispatch_request()\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:/TdPII\\run.py", line 46, in version\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     db.session.add(nodo_act)\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     return getattr(self.registry(), name)(*args, **kwargs)\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1957, in add\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189]     raise exc.UnmappedInstanceError(instance)\r
+[Sun Oct 20 19:54:00.525674 2019] [wsgi:error] [pid 768:tid 2044] [client 192.168.1.110:2189] sqlalchemy.orm.exc.UnmappedInstanceError: Class 'flask_sqlalchemy.BaseQuery' is not mapped\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742] [2019-10-20 20:00:15,685] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742] Traceback (most recent call last):\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1955, in add\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     state = attributes.instance_state(instance)\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742] AttributeError: 'BaseQuery' object has no attribute '_sa_instance_state'\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742] \r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742] During handling of the above exception, another exception occurred:\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742] \r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742] Traceback (most recent call last):\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     raise value\r
+[Sun Oct 20 20:00:15.689344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:/TdPII\\run.py", line 50, in version\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     db.session.add(nodo_act)\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     return getattr(self.registry(), name)(*args, **kwargs)\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1957, in add\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742]     raise exc.UnmappedInstanceError(instance)\r
+[Sun Oct 20 20:00:15.690344 2019] [wsgi:error] [pid 7584:tid 2052] [client 192.168.1.110:44742] sqlalchemy.orm.exc.UnmappedInstanceError: Class 'flask_sqlalchemy.BaseQuery' is not mapped\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010] [2019-10-20 20:01:32,870] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010] Traceback (most recent call last):\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]     raise value\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]   File "D:/TdPII\\run.py", line 43, in version\r
+[Sun Oct 20 20:01:32.873579 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010]     nodo_act = session.query(Nodo).filter(Nodo.id == nodo).one()\r
+[Sun Oct 20 20:01:32.874581 2019] [wsgi:error] [pid 2404:tid 1988] [client 192.168.1.110:39010] NameError: name 'session' is not defined\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646] [2019-10-20 20:02:38,548] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646] Traceback (most recent call last):\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:02:38.554843 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]     raise value\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]   File "D:/TdPII\\run.py", line 43, in version\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]     nodo_act = db.session.query(Nodo).filter(Nodo.id == nodo).one()\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\query.py", line 3307, in one\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646]     raise orm_exc.NoResultFound("No row was found for one()")\r
+[Sun Oct 20 20:02:38.555844 2019] [wsgi:error] [pid 11192:tid 1996] [client 192.168.1.110:8646] sqlalchemy.orm.exc.NoResultFound: No row was found for one()\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438] [2019-10-20 20:03:30,780] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438] Traceback (most recent call last):\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1952, in full_dispatch_request\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438]     return self.finalize_request(rv)\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1967, in finalize_request\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438]     response = self.make_response(rv)\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2097, in make_response\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438]     "The view function did not return a valid response. The"\r
+[Sun Oct 20 20:03:30.782721 2019] [wsgi:error] [pid 1656:tid 2000] [client 192.168.1.110:21438] TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377] [2019-10-20 20:06:24,460] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377] Traceback (most recent call last):\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:06:24.467632 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]     raise value\r
+[Sun Oct 20 20:06:24.468617 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:06:24.468617 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:06:24.468617 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:06:24.468617 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:06:24.468617 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]   File "D:/TdPII\\run.py", line 47, in version\r
+[Sun Oct 20 20:06:24.468617 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377]     nodo_act = Nodo.query.filter_by(id==nodo)\r
+[Sun Oct 20 20:06:24.468617 2019] [wsgi:error] [pid 4944:tid 1976] [client ::1:56377] TypeError: filter_by() takes 1 positional argument but 2 were given\r
+[Sun Oct 20 20:08:48.347917 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] SELECT nodo.id_cliente AS nodo_id_cliente, nodo.id AS nodo_id, nodo.nodo AS nodo_nodo, nodo.firmware AS nodo_firmware, nodo.nombre AS nodo_nombre, nodo.descripcion AS nodo_descripcion \r
+[Sun Oct 20 20:08:48.347917 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] FROM nodo \r
+[Sun Oct 20 20:08:48.347917 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] WHERE nodo.id = %s
+[Sun Oct 20 20:08:48.347917 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] \r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] [2019-10-20 20:08:48,348] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] Traceback (most recent call last):\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1955, in add\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     state = attributes.instance_state(instance)\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] AttributeError: 'BaseQuery' object has no attribute '_sa_instance_state'\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] \r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] During handling of the above exception, another exception occurred:\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] \r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] Traceback (most recent call last):\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:08:48.352921 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     raise value\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:/TdPII\\run.py", line 51, in version\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     db.session.add(nodo_act)\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     return getattr(self.registry(), name)(*args, **kwargs)\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1957, in add\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398]     raise exc.UnmappedInstanceError(instance)\r
+[Sun Oct 20 20:08:48.353919 2019] [wsgi:error] [pid 6580:tid 1988] [client ::1:56398] sqlalchemy.orm.exc.UnmappedInstanceError: Class 'flask_sqlalchemy.BaseQuery' is not mapped\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430] [2019-10-20 20:13:37,497] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430] Traceback (most recent call last):\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]     raise value\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:13:37.499942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:13:37.500942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:13:37.500942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]   File "D:/TdPII\\run.py", line 48, in version\r
+[Sun Oct 20 20:13:37.500942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430]     nodo_act.firmware = firm\r
+[Sun Oct 20 20:13:37.500942 2019] [wsgi:error] [pid 12072:tid 1996] [client ::1:56430] AttributeError: 'NoneType' object has no attribute 'firmware'\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441] [2019-10-20 20:14:40,241] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441] Traceback (most recent call last):\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]     raise value\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]   File "D:/TdPII\\run.py", line 48, in version\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441]     nodo_act.firmware = firm\r
+[Sun Oct 20 20:14:40.244853 2019] [wsgi:error] [pid 10184:tid 1980] [client ::1:56441] AttributeError: 'NoneType' object has no attribute 'firmware'\r
+[Sun Oct 20 20:16:22.706745 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459] 4\r
+[Sun Oct 20 20:16:22.706745 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459] 1234\r
+[Sun Oct 20 20:16:22.707746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459] 2019-10-20 20:05:00\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459] [2019-10-20 20:16:22,787] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459] Traceback (most recent call last):\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]     raise value\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]   File "D:/TdPII\\run.py", line 51, in version\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459]     nodo_act.firmware = firm\r
+[Sun Oct 20 20:16:22.790746 2019] [wsgi:error] [pid 3360:tid 1996] [client ::1:56459] AttributeError: 'NoneType' object has no attribute 'firmware'\r
+[Sun Oct 20 20:17:11.719593 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470] 4\r
+[Sun Oct 20 20:17:11.719593 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470] 1234\r
+[Sun Oct 20 20:17:11.720595 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470] 2019-10-20 20:05:00\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470] [2019-10-20 20:17:11,808] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470] Traceback (most recent call last):\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]     raise value\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]   File "D:/TdPII\\run.py", line 51, in version\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470]     nodo_act.firmware = str(firm)\r
+[Sun Oct 20 20:17:11.811592 2019] [wsgi:error] [pid 4336:tid 1984] [client ::1:56470] AttributeError: 'NoneType' object has no attribute 'firmware'\r
+[Sun Oct 20 20:17:32.699074 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479] 4\r
+[Sun Oct 20 20:17:32.700081 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479] as34\r
+[Sun Oct 20 20:17:32.700081 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479] 2019-10-20 20:05:00\r
+[Sun Oct 20 20:17:32.703076 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479] [2019-10-20 20:17:32,703] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:17:32.703076 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479] Traceback (most recent call last):\r
+[Sun Oct 20 20:17:32.703076 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:17:32.703076 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:17:32.703076 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]     raise value\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]   File "D:/TdPII\\run.py", line 51, in version\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479]     nodo_act.firmware = str(firm)\r
+[Sun Oct 20 20:17:32.704078 2019] [wsgi:error] [pid 4336:tid 1976] [client ::1:56479] AttributeError: 'NoneType' object has no attribute 'firmware'\r
+[Sun Oct 20 20:17:55.004042 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484] 4\r
+[Sun Oct 20 20:17:55.004042 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484] as34\r
+[Sun Oct 20 20:17:55.004042 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484] 2019-10-20 20:05:00\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484] [2019-10-20 20:17:55,078] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484] Traceback (most recent call last):\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]     raise value\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]   File "D:/TdPII\\run.py", line 51, in version\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484]     nodo_act.firmware = firm\r
+[Sun Oct 20 20:17:55.081043 2019] [wsgi:error] [pid 14748:tid 1976] [client ::1:56484] AttributeError: 'NoneType' object has no attribute 'firmware'\r
+[Sun Oct 20 20:19:12.003471 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495] 4\r
+[Sun Oct 20 20:19:12.003471 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495] as34\r
+[Sun Oct 20 20:19:12.003471 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495] 2019-10-20 20:05:00\r
+[Sun Oct 20 20:19:12.098478 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495] [2019-10-20 20:19:12,095] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:19:12.098478 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495] Traceback (most recent call last):\r
+[Sun Oct 20 20:19:12.098478 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:19:12.098478 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:19:12.098478 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1952, in full_dispatch_request\r
+[Sun Oct 20 20:19:12.098478 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495]     return self.finalize_request(rv)\r
+[Sun Oct 20 20:19:12.098478 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1967, in finalize_request\r
+[Sun Oct 20 20:19:12.098478 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495]     response = self.make_response(rv)\r
+[Sun Oct 20 20:19:12.099476 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2097, in make_response\r
+[Sun Oct 20 20:19:12.099476 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495]     "The view function did not return a valid response. The"\r
+[Sun Oct 20 20:19:12.099476 2019] [wsgi:error] [pid 13012:tid 1976] [client ::1:56495] TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.\r
+[Sun Oct 20 20:20:22.942549 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510] 4\r
+[Sun Oct 20 20:20:22.942549 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510] as34\r
+[Sun Oct 20 20:20:22.942549 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510] 2019-10-20 20:05:00\r
+[Sun Oct 20 20:20:23.029547 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510] [2019-10-20 20:20:23,023] ERROR in app: Exception on /version [GET]\r
+[Sun Oct 20 20:20:23.029547 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510] Traceback (most recent call last):\r
+[Sun Oct 20 20:20:23.029547 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     response = self.full_dispatch_request()\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     rv = self.handle_user_exception(e)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     raise value\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     rv = self.dispatch_request()\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:/TdPII\\run.py", line 53, in version\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     db.session.add(nodo_act)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     return getattr(self.registry(), name)(*args, **kwargs)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1959, in add\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     self._save_or_update_state(state)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1972, in _save_or_update_state\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     self._save_or_update_impl(state)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2322, in _save_or_update_impl\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     self._update_impl(state)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2305, in _update_impl\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     to_attach = self._before_attach(state, obj)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2393, in _before_attach\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510]     % (state_str(state), state.session_id, self.hash_key)\r
+[Sun Oct 20 20:20:23.030550 2019] [wsgi:error] [pid 15004:tid 1980] [client ::1:56510] sqlalchemy.exc.InvalidRequestError: Object '<Nodo at 0x132097c0288>' is already attached to session '1' (this is '2')\r
