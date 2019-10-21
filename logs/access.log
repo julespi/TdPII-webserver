@@ -3222,3 +3222,73 @@
 192.168.1.110 - - [20/Oct/2019:20:19:46 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=20.56&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
 192.168.1.110 - - [20/Oct/2019:20:20:01 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=20.56&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
 192.168.1.110 - - [20/Oct/2019:20:20:16 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=20.50&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+::1 - - [20/Oct/2019:20:20:21 -0300] "GET /version?nodo=4&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 500 290
+192.168.1.110 - - [20/Oct/2019:20:20:31 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=20.50&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+192.168.1.110 - - [20/Oct/2019:20:20:46 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=20.50&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+192.168.1.110 - - [20/Oct/2019:20:21:01 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=20.50&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+192.168.1.110 - - [20/Oct/2019:20:21:16 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=20.50&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+192.168.1.110 - - [20/Oct/2019:20:21:32 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=20.50&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+::1 - - [20/Oct/2019:20:22:57 -0300] "POST /phpmyadmin/index.php HTTP/1.1" 200 1564
+::1 - - [20/Oct/2019:20:23:05 -0300] "POST /phpmyadmin/index.php HTTP/1.1" 200 1564
+::1 - - [20/Oct/2019:20:23:07 -0300] "POST /phpmyadmin/index.php HTTP/1.1" 200 1564
+::1 - - [20/Oct/2019:20:24:23 -0300] "POST /phpmyadmin/index.php HTTP/1.1" 200 1564
+192.168.1.110 - - [20/Oct/2019:20:26:43 -0300] "-" 408 -
+::1 - - [21/Oct/2019:17:53:43 -0300] "GET / HTTP/1.1" 200 227
+::1 - - [21/Oct/2019:17:53:48 -0300] "GET /favicon.ico HTTP/1.1" 404 232
+::1 - - [21/Oct/2019:17:54:52 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 500 290
+::1 - - [21/Oct/2019:17:55:25 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 500 290
+::1 - - [21/Oct/2019:17:56:21 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 200 10
+::1 - - [21/Oct/2019:17:56:38 -0300] "GET /phpmyadmin/ HTTP/1.1" 200 15138
+::1 - - [21/Oct/2019:17:56:42 -0300] "GET /phpmyadmin/js/messages.php?l=es&v=4.9.0.1 HTTP/1.1" 200 9919
+::1 - - [21/Oct/2019:17:56:42 -0300] "GET /phpmyadmin/phpmyadmin.css.php?nocache=6138111860ltr&server=1 HTTP/1.1" 200 20812
+::1 - - [21/Oct/2019:17:56:42 -0300] "GET /phpmyadmin/js/whitelist.php?v=4.9.0.1 HTTP/1.1" 200 491
+::1 - - [21/Oct/2019:17:56:44 -0300] "POST /phpmyadmin/navigation.php?ajax_request=1 HTTP/1.1" 200 2264
+::1 - - [21/Oct/2019:17:56:44 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1525
+::1 - - [21/Oct/2019:17:56:44 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1422
+::1 - - [21/Oct/2019:17:56:44 -0300] "POST /phpmyadmin/db_structure.php?ajax_request=1&favorite_table=1&sync_favorite_tables=1 HTTP/1.1" 200 146
+::1 - - [21/Oct/2019:17:56:44 -0300] "POST /phpmyadmin/version_check.php HTTP/1.1" 200 64
+::1 - - [21/Oct/2019:17:56:46 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1422
+::1 - - [21/Oct/2019:17:56:50 -0300] "GET /phpmyadmin/db_structure.php?server=1&db=g20_tdp2&ajax_request=true&ajax_page_request=true&_nocache=1571691410145691328&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 5478
+::1 - - [21/Oct/2019:17:56:51 -0300] "GET /phpmyadmin/navigation.php?ajax_request=1&aPath=cm9vdA%3D%3D.ZzIwX3RkcDI%3D&vPath=cm9vdA%3D%3D.ZzIwX3RkcDI%3D&pos=0&pos2_name=&pos2_value=&searchClause=&searchClause2=&_nocache=1571691411098841261&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1953
+::1 - - [21/Oct/2019:17:56:53 -0300] "GET /phpmyadmin/sql.php?server=1&db=g20_tdp2&table=nodo&pos=0&ajax_request=true&ajax_page_request=true&_nocache=1571691413378423092&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 7829
+::1 - - [21/Oct/2019:17:56:54 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1571691414544630607&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1533
+::1 - - [21/Oct/2019:17:56:57 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1425
+::1 - - [21/Oct/2019:17:57:47 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 500 290
+::1 - - [21/Oct/2019:17:59:40 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 200 10
+::1 - - [21/Oct/2019:17:59:35 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 200 10
+::1 - - [21/Oct/2019:18:01:36 -0300] "GET /phpmyadmin/sql.php?server=1&db=g20_tdp2&table=nodo&pos=0 HTTP/1.1" 200 13994
+::1 - - [21/Oct/2019:18:01:40 -0300] "GET /phpmyadmin/phpmyadmin.css.php?nocache=6138190849ltr&server=1 HTTP/1.1" 200 20812
+::1 - - [21/Oct/2019:18:01:41 -0300] "POST /phpmyadmin/navigation.php?ajax_request=1 HTTP/1.1" 200 2639
+::1 - - [21/Oct/2019:18:01:41 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1528
+::1 - - [21/Oct/2019:18:01:41 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1425
+::1 - - [21/Oct/2019:18:01:41 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=157169170159348266&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1533
+::1 - - [21/Oct/2019:18:01:41 -0300] "GET /phpmyadmin/favicon.ico HTTP/1.1" 200 22486
+::1 - - [21/Oct/2019:18:01:46 -0300] "GET /phpmyadmin/tbl_structure.php?db=g20_tdp2&table=nodo&ajax_request=true&ajax_page_request=true&_nocache=1571691706368197518&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 8563
+::1 - - [21/Oct/2019:18:01:48 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1571691708135738989&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1533
+::1 - - [21/Oct/2019:18:02:03 -0300] "GET /phpmyadmin/sql.php?db=g20_tdp2&table=nodo&pos=0&ajax_request=true&ajax_page_request=true&_nocache=157169172326924901&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 7825
+::1 - - [21/Oct/2019:18:02:03 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1571691723718226116&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1533
+::1 - - [21/Oct/2019:18:03:38 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 500 290
+::1 - - [21/Oct/2019:18:04:57 -0300] "GET /phpmyadmin/tbl_structure.php?db=g20_tdp2&table=nodo&ajax_request=true&ajax_page_request=true&_nocache=1571691897432180909&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 8561
+::1 - - [21/Oct/2019:18:04:58 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1571691898013417404&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1533
+::1 - - [21/Oct/2019:18:06:12 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 500 290
+::1 - - [21/Oct/2019:18:06:55 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 200 10
+::1 - - [21/Oct/2019:18:07:12 -0300] "GET /phpmyadmin/sql.php?db=g20_tdp2&table=nodo&pos=0&ajax_request=true&ajax_page_request=true&_nocache=1571692032251592736&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 7829
+::1 - - [21/Oct/2019:18:07:12 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1571692032815847730&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1533
+::1 - - [21/Oct/2019:18:08:05 -0300] "GET /phpmyadmin/sql.php?db=g20_tdp2&table=nodo&pos=0 HTTP/1.1" 200 14413
+::1 - - [21/Oct/2019:18:08:05 -0300] "GET /phpmyadmin/phpmyadmin.css.php?nocache=6138191133ltr&server=1 HTTP/1.1" 200 20812
+::1 - - [21/Oct/2019:18:08:06 -0300] "POST /phpmyadmin/navigation.php?ajax_request=1 HTTP/1.1" 200 2639
+::1 - - [21/Oct/2019:18:08:06 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1528
+::1 - - [21/Oct/2019:18:08:06 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1425
+::1 - - [21/Oct/2019:18:08:06 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1571692086714148167&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1533
+::1 - - [21/Oct/2019:18:08:07 -0300] "GET /phpmyadmin/favicon.ico HTTP/1.1" 200 22486
+::1 - - [21/Oct/2019:18:09:31 -0300] "GET /version?nodo=1&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 200 10
+::1 - - [21/Oct/2019:18:09:40 -0300] "GET /phpmyadmin/sql.php?db=g20_tdp2&table=nodo&pos=0 HTTP/1.1" 200 14485
+::1 - - [21/Oct/2019:18:09:41 -0300] "GET /phpmyadmin/phpmyadmin.css.php?nocache=6138191518ltr&server=1 HTTP/1.1" 200 20812
+::1 - - [21/Oct/2019:18:09:41 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1431
+::1 - - [21/Oct/2019:18:09:42 -0300] "POST /phpmyadmin/navigation.php?ajax_request=1 HTTP/1.1" 200 2639
+::1 - - [21/Oct/2019:18:09:42 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1528
+::1 - - [21/Oct/2019:18:09:42 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1425
+::1 - - [21/Oct/2019:18:09:42 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=157169218249824858&token=%3D*DD%27pg%7B(!o2GY!A HTTP/1.1" 200 1533
+::1 - - [21/Oct/2019:18:09:42 -0300] "GET /phpmyadmin/favicon.ico HTTP/1.1" 200 22486
+::1 - - [21/Oct/2019:18:10:52 -0300] "GET /version?nodo=10&timestamp=2019-10-20%2020:05:00&firmware=as34 HTTP/1.1" 500 290
+::1 - - [21/Oct/2019:18:15:52 -0300] "-" 408 -
