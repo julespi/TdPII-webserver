@@ -6857,3 +6857,141 @@
 [Mon Oct 21 18:10:52.824716 2019] [wsgi:error] [pid 6216:tid 2008] [client ::1:57881]   File "D:/TdPII\\run.py", line 48, in version\r
 [Mon Oct 21 18:10:52.824716 2019] [wsgi:error] [pid 6216:tid 2008] [client ::1:57881]     print(nodo_act.firmware)\r
 [Mon Oct 21 18:10:52.824716 2019] [wsgi:error] [pid 6216:tid 2008] [client ::1:57881] AttributeError: 'NoneType' object has no attribute 'firmware'\r
+[Mon Oct 21 18:38:31.283187 2019] [wsgi:error] [pid 12476:tid 2044] [client 127.0.0.1:53784] mod_wsgi (pid=12476): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 18:38:31.283187 2019] [wsgi:error] [pid 12476:tid 2044] [client 127.0.0.1:53784] mod_wsgi (pid=12476): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 18:38:31.284188 2019] [wsgi:error] [pid 12476:tid 2044] [client 127.0.0.1:53784] Traceback (most recent call last):\r
+[Mon Oct 21 18:38:31.284188 2019] [wsgi:error] [pid 12476:tid 2044] [client 127.0.0.1:53784]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 18:38:31.284188 2019] [wsgi:error] [pid 12476:tid 2044] [client 127.0.0.1:53784]     from run import app as application\r
+[Mon Oct 21 18:38:31.284188 2019] [wsgi:error] [pid 12476:tid 2044] [client 127.0.0.1:53784] ModuleNotFoundError: No module named 'run'\r
+[Mon Oct 21 18:39:43.209471 2019] [wsgi:error] [pid 12476:tid 2044] [client ::1:53794] as34\r
+[Mon Oct 21 18:39:43.209471 2019] [wsgi:error] [pid 12476:tid 2044] [client ::1:53794] 1\r
+[Mon Oct 21 18:39:43.209471 2019] [wsgi:error] [pid 12476:tid 2044] [client ::1:53794] 2019-10-20 20:05:00\r
+[Mon Oct 21 18:39:43.209471 2019] [wsgi:error] [pid 12476:tid 2044] [client ::1:53794] as34\r
+[Mon Oct 21 18:39:43.209471 2019] [wsgi:error] [pid 12476:tid 2044] [client ::1:53794] 1\r
+[Mon Oct 21 18:39:43.209471 2019] [wsgi:error] [pid 12476:tid 2044] [client ::1:53794] 2019-10-20 20:05:00\r
+[Mon Oct 21 18:58:00.898619 2019] [wsgi:error] [pid 12552:tid 1980] [client ::1:53896] mod_wsgi (pid=12552): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 18:58:00.898619 2019] [wsgi:error] [pid 12552:tid 1980] [client ::1:53896] mod_wsgi (pid=12552): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 18:58:00.899620 2019] [wsgi:error] [pid 12552:tid 1980] [client ::1:53896] Traceback (most recent call last):\r
+[Mon Oct 21 18:58:00.899620 2019] [wsgi:error] [pid 12552:tid 1980] [client ::1:53896]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 18:58:00.899620 2019] [wsgi:error] [pid 12552:tid 1980] [client ::1:53896]     from main import app as application\r
+[Mon Oct 21 18:58:00.899620 2019] [wsgi:error] [pid 12552:tid 1980] [client ::1:53896]   File "D:/TdPII\\main.py", line 5, in <module>\r
+[Mon Oct 21 18:58:00.899620 2019] [wsgi:error] [pid 12552:tid 1980] [client ::1:53896]     from . import db\r
+[Mon Oct 21 18:58:00.899620 2019] [wsgi:error] [pid 12552:tid 1980] [client ::1:53896] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 18:58:16.767989 2019] [wsgi:error] [pid 12552:tid 1984] [client ::1:53898] mod_wsgi (pid=12552): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 18:58:16.767989 2019] [wsgi:error] [pid 12552:tid 1984] [client ::1:53898] mod_wsgi (pid=12552): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 18:58:16.767989 2019] [wsgi:error] [pid 12552:tid 1984] [client ::1:53898] Traceback (most recent call last):\r
+[Mon Oct 21 18:58:16.768986 2019] [wsgi:error] [pid 12552:tid 1984] [client ::1:53898]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 18:58:16.768986 2019] [wsgi:error] [pid 12552:tid 1984] [client ::1:53898]     from main import app as application\r
+[Mon Oct 21 18:58:16.768986 2019] [wsgi:error] [pid 12552:tid 1984] [client ::1:53898]   File "D:/TdPII\\main.py", line 5, in <module>\r
+[Mon Oct 21 18:58:16.768986 2019] [wsgi:error] [pid 12552:tid 1984] [client ::1:53898]     from . import db\r
+[Mon Oct 21 18:58:16.768986 2019] [wsgi:error] [pid 12552:tid 1984] [client ::1:53898] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 18:58:49.361710 2019] [wsgi:error] [pid 11892:tid 1980] [client ::1:53908] mod_wsgi (pid=11892): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 18:58:49.361710 2019] [wsgi:error] [pid 11892:tid 1980] [client ::1:53908] mod_wsgi (pid=11892): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 18:58:49.362713 2019] [wsgi:error] [pid 11892:tid 1980] [client ::1:53908] Traceback (most recent call last):\r
+[Mon Oct 21 18:58:49.362713 2019] [wsgi:error] [pid 11892:tid 1980] [client ::1:53908]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 18:58:49.362713 2019] [wsgi:error] [pid 11892:tid 1980] [client ::1:53908]     from main import app as application\r
+[Mon Oct 21 18:58:49.362713 2019] [wsgi:error] [pid 11892:tid 1980] [client ::1:53908]   File "D:/TdPII\\main.py", line 5, in <module>\r
+[Mon Oct 21 18:58:49.362713 2019] [wsgi:error] [pid 11892:tid 1980] [client ::1:53908]     from . import db\r
+[Mon Oct 21 18:58:49.362713 2019] [wsgi:error] [pid 11892:tid 1980] [client ::1:53908] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 19:03:27.321680 2019] [wsgi:error] [pid 11892:tid 1984] [client ::1:53955] mod_wsgi (pid=11892): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:03:27.321680 2019] [wsgi:error] [pid 11892:tid 1984] [client ::1:53955] mod_wsgi (pid=11892): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:03:27.322678 2019] [wsgi:error] [pid 11892:tid 1984] [client ::1:53955] Traceback (most recent call last):\r
+[Mon Oct 21 19:03:27.322678 2019] [wsgi:error] [pid 11892:tid 1984] [client ::1:53955]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 19:03:27.322678 2019] [wsgi:error] [pid 11892:tid 1984] [client ::1:53955]     from main import app as application\r
+[Mon Oct 21 19:03:27.322678 2019] [wsgi:error] [pid 11892:tid 1984] [client ::1:53955]   File "D:/TdPII\\main.py", line 5, in <module>\r
+[Mon Oct 21 19:03:27.322678 2019] [wsgi:error] [pid 11892:tid 1984] [client ::1:53955]     from . import db\r
+[Mon Oct 21 19:03:27.322678 2019] [wsgi:error] [pid 11892:tid 1984] [client ::1:53955] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 19:07:51.776202 2019] [wsgi:error] [pid 13960:tid 1980] [client ::1:53975] mod_wsgi (pid=13960): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:07:51.776202 2019] [wsgi:error] [pid 13960:tid 1980] [client ::1:53975] mod_wsgi (pid=13960): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:07:51.777203 2019] [wsgi:error] [pid 13960:tid 1980] [client ::1:53975] Traceback (most recent call last):\r
+[Mon Oct 21 19:07:51.777203 2019] [wsgi:error] [pid 13960:tid 1980] [client ::1:53975]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 19:07:51.777203 2019] [wsgi:error] [pid 13960:tid 1980] [client ::1:53975]     from main import app as application\r
+[Mon Oct 21 19:07:51.777203 2019] [wsgi:error] [pid 13960:tid 1980] [client ::1:53975]   File "D:/TdPII\\main.py", line 5, in <module>\r
+[Mon Oct 21 19:07:51.777203 2019] [wsgi:error] [pid 13960:tid 1980] [client ::1:53975]     from . import db\r
+[Mon Oct 21 19:07:51.777203 2019] [wsgi:error] [pid 13960:tid 1980] [client ::1:53975] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 19:08:38.192975 2019] [wsgi:error] [pid 10064:tid 1976] [client ::1:53981] mod_wsgi (pid=10064): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:08:38.192975 2019] [wsgi:error] [pid 10064:tid 1976] [client ::1:53981] mod_wsgi (pid=10064): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:08:38.193972 2019] [wsgi:error] [pid 10064:tid 1976] [client ::1:53981] Traceback (most recent call last):\r
+[Mon Oct 21 19:08:38.193972 2019] [wsgi:error] [pid 10064:tid 1976] [client ::1:53981]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 19:08:38.193972 2019] [wsgi:error] [pid 10064:tid 1976] [client ::1:53981]     from main import app as application\r
+[Mon Oct 21 19:08:38.193972 2019] [wsgi:error] [pid 10064:tid 1976] [client ::1:53981] ImportError: cannot import name 'app' from 'main' (D:/TdPII\\main.py)\r
+[Mon Oct 21 19:09:20.595016 2019] [wsgi:error] [pid 3172:tid 1976] [client ::1:53988] mod_wsgi (pid=3172): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:09:20.596017 2019] [wsgi:error] [pid 3172:tid 1976] [client ::1:53988] TypeError: 'Blueprint' object is not callable\r
+[Mon Oct 21 19:10:21.312863 2019] [wsgi:error] [pid 12300:tid 1996] [client ::1:53996] mod_wsgi (pid=12300): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:10:21.312863 2019] [wsgi:error] [pid 12300:tid 1996] [client ::1:53996] TypeError: 'Blueprint' object is not callable\r
+[Mon Oct 21 19:11:06.537331 2019] [wsgi:error] [pid 8520:tid 1976] [client ::1:54002] mod_wsgi (pid=8520): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:11:06.537331 2019] [wsgi:error] [pid 8520:tid 1976] [client ::1:54002] mod_wsgi (pid=8520): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:11:06.537331 2019] [wsgi:error] [pid 8520:tid 1976] [client ::1:54002] Traceback (most recent call last):\r
+[Mon Oct 21 19:11:06.537331 2019] [wsgi:error] [pid 8520:tid 1976] [client ::1:54002]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 19:11:06.537331 2019] [wsgi:error] [pid 8520:tid 1976] [client ::1:54002]     from __init__ import app as application\r
+[Mon Oct 21 19:11:06.537331 2019] [wsgi:error] [pid 8520:tid 1976] [client ::1:54002] ImportError: cannot import name 'app' from '__init__' (D:/TdPII\\__init__.py)\r
+[Mon Oct 21 19:12:29.215192 2019] [wsgi:error] [pid 10724:tid 1976] [client ::1:54015] mod_wsgi (pid=10724): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:12:29.215192 2019] [wsgi:error] [pid 10724:tid 1976] [client ::1:54015] TypeError: create_app() takes 0 positional arguments but 2 were given\r
+[Mon Oct 21 19:18:35.871349 2019] [wsgi:error] [pid 9708:tid 1992] [client ::1:54088] mod_wsgi (pid=9708): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:18:35.871349 2019] [wsgi:error] [pid 9708:tid 1992] [client ::1:54088] mod_wsgi (pid=9708): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:18:35.871349 2019] [wsgi:error] [pid 9708:tid 1992] [client ::1:54088] Traceback (most recent call last):\r
+[Mon Oct 21 19:18:35.871349 2019] [wsgi:error] [pid 9708:tid 1992] [client ::1:54088]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 19:18:35.871349 2019] [wsgi:error] [pid 9708:tid 1992] [client ::1:54088]     from TdPII import app as application\r
+[Mon Oct 21 19:18:35.871349 2019] [wsgi:error] [pid 9708:tid 1992] [client ::1:54088] ModuleNotFoundError: No module named 'TdPII'\r
+[Mon Oct 21 19:19:04.428496 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54093] mod_wsgi (pid=14984): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:19:04.428496 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54093] mod_wsgi (pid=14984): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:19:04.429512 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54093] Traceback (most recent call last):\r
+[Mon Oct 21 19:19:04.429512 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54093]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 19:19:04.429512 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54093]     from . import app as application\r
+[Mon Oct 21 19:19:04.430494 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54093] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 19:19:05.978944 2019] [wsgi:error] [pid 14984:tid 1984] [client ::1:54094] mod_wsgi (pid=14984): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:19:05.979930 2019] [wsgi:error] [pid 14984:tid 1984] [client ::1:54094] mod_wsgi (pid=14984): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:19:05.979930 2019] [wsgi:error] [pid 14984:tid 1984] [client ::1:54094] Traceback (most recent call last):\r
+[Mon Oct 21 19:19:05.979930 2019] [wsgi:error] [pid 14984:tid 1984] [client ::1:54094]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 19:19:05.979930 2019] [wsgi:error] [pid 14984:tid 1984] [client ::1:54094]     from . import app as application\r
+[Mon Oct 21 19:19:05.980930 2019] [wsgi:error] [pid 14984:tid 1984] [client ::1:54094] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 19:19:08.113662 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54095] mod_wsgi (pid=14984): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:19:08.113662 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54095] mod_wsgi (pid=14984): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:19:08.113662 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54095] Traceback (most recent call last):\r
+[Mon Oct 21 19:19:08.113662 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54095]   File "D:/TdPII/web.wsgi", line 6, in <module>\r
+[Mon Oct 21 19:19:08.113662 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54095]     from . import app as application\r
+[Mon Oct 21 19:19:08.113662 2019] [wsgi:error] [pid 14984:tid 1988] [client ::1:54095] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 19:20:29.587477 2019] [wsgi:error] [pid 13304:tid 1980] [client ::1:54105] mod_wsgi (pid=13304): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:20:29.587477 2019] [wsgi:error] [pid 13304:tid 1980] [client ::1:54105] mod_wsgi (pid=13304): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:20:29.587477 2019] [wsgi:error] [pid 13304:tid 1980] [client ::1:54105] Traceback (most recent call last):\r
+[Mon Oct 21 19:20:29.587477 2019] [wsgi:error] [pid 13304:tid 1980] [client ::1:54105]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Mon Oct 21 19:20:29.587477 2019] [wsgi:error] [pid 13304:tid 1980] [client ::1:54105]     from . import app as application\r
+[Mon Oct 21 19:20:29.587477 2019] [wsgi:error] [pid 13304:tid 1980] [client ::1:54105] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 19:21:01.887238 2019] [wsgi:error] [pid 536:tid 1988] [client ::1:54109] mod_wsgi (pid=536): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:21:01.887238 2019] [wsgi:error] [pid 536:tid 1988] [client ::1:54109] mod_wsgi (pid=536): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:21:01.887238 2019] [wsgi:error] [pid 536:tid 1988] [client ::1:54109] Traceback (most recent call last):\r
+[Mon Oct 21 19:21:01.887238 2019] [wsgi:error] [pid 536:tid 1988] [client ::1:54109]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Mon Oct 21 19:21:01.887238 2019] [wsgi:error] [pid 536:tid 1988] [client ::1:54109]     from . import app as application\r
+[Mon Oct 21 19:21:01.887238 2019] [wsgi:error] [pid 536:tid 1988] [client ::1:54109] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 19:21:45.568350 2019] [wsgi:error] [pid 9252:tid 2020] [client ::1:54121] mod_wsgi (pid=9252): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:21:45.569355 2019] [wsgi:error] [pid 9252:tid 2020] [client ::1:54121] mod_wsgi (pid=9252): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:21:45.571349 2019] [wsgi:error] [pid 9252:tid 2020] [client ::1:54121] Traceback (most recent call last):\r
+[Mon Oct 21 19:21:45.573348 2019] [wsgi:error] [pid 9252:tid 2020] [client ::1:54121]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Mon Oct 21 19:21:45.573348 2019] [wsgi:error] [pid 9252:tid 2020] [client ::1:54121]     from TDPII import app as application\r
+[Mon Oct 21 19:21:45.573348 2019] [wsgi:error] [pid 9252:tid 2020] [client ::1:54121] ModuleNotFoundError: No module named 'TDPII'\r
+[Mon Oct 21 19:22:15.355028 2019] [wsgi:error] [pid 3412:tid 1984] [client ::1:54134] mod_wsgi (pid=3412): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:22:15.355028 2019] [wsgi:error] [pid 3412:tid 1984] [client ::1:54134] mod_wsgi (pid=3412): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:22:15.356030 2019] [wsgi:error] [pid 3412:tid 1984] [client ::1:54134] Traceback (most recent call last):\r
+[Mon Oct 21 19:22:15.356030 2019] [wsgi:error] [pid 3412:tid 1984] [client ::1:54134]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Mon Oct 21 19:22:15.356030 2019] [wsgi:error] [pid 3412:tid 1984] [client ::1:54134]     from TDPII import app as application\r
+[Mon Oct 21 19:22:15.356030 2019] [wsgi:error] [pid 3412:tid 1984] [client ::1:54134] ModuleNotFoundError: No module named 'TDPII'\r
+[Mon Oct 21 19:43:36.872970 2019] [wsgi:error] [pid 10552:tid 2000] [client ::1:54276] mod_wsgi (pid=10552): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:43:36.872970 2019] [wsgi:error] [pid 10552:tid 2000] [client ::1:54276] TypeError: create_app() takes 0 positional arguments but 2 were given\r
+[Mon Oct 21 19:44:06.091230 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281] mod_wsgi (pid=9100): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:44:06.091230 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281] mod_wsgi (pid=9100): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 19:44:06.092231 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281] Traceback (most recent call last):\r
+[Mon Oct 21 19:44:06.092231 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Mon Oct 21 19:44:06.092231 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281]     from main import app as application\r
+[Mon Oct 21 19:44:06.092231 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281]   File "D:/TdPII\\main.py", line 8, in <module>\r
+[Mon Oct 21 19:44:06.092231 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281]     app = create_app()\r
+[Mon Oct 21 19:44:06.092231 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281]   File "D:/TdPII\\__init__.py", line 15, in create_app\r
+[Mon Oct 21 19:44:06.092231 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281]     from .auth import auth as auth_blueprint\r
+[Mon Oct 21 19:44:06.092231 2019] [wsgi:error] [pid 9100:tid 1984] [client ::1:54281] ImportError: attempted relative import with no known parent package\r
+[Mon Oct 21 20:01:02.206496 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551] mod_wsgi (pid=4708): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 20:01:02.207495 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551] mod_wsgi (pid=4708): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Oct 21 20:01:02.207495 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551] Traceback (most recent call last):\r
+[Mon Oct 21 20:01:02.207495 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Mon Oct 21 20:01:02.208493 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551]     from main import app as application\r
+[Mon Oct 21 20:01:02.208493 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551]   File "D:/TdPII\\main.py", line 5, in <module>\r
+[Mon Oct 21 20:01:02.208493 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551]     from __init__ import db, create_app\r
+[Mon Oct 21 20:01:02.208493 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551] ImportError: cannot import name 'db' from '__init__' (D:/TdPII\\__init__.py)\r
