@@ -6995,3 +6995,479 @@
 [Mon Oct 21 20:01:02.208493 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551]   File "D:/TdPII\\main.py", line 5, in <module>\r
 [Mon Oct 21 20:01:02.208493 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551]     from __init__ import db, create_app\r
 [Mon Oct 21 20:01:02.208493 2019] [wsgi:error] [pid 4708:tid 1988] [client ::1:52551] ImportError: cannot import name 'db' from '__init__' (D:/TdPII\\__init__.py)\r
+[Thu Oct 24 18:22:21.472089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337] [2019-10-24 18:22:21,468] ERROR in app: Exception on /mostrar [GET]\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337] Traceback (most recent call last):\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]     response = self.full_dispatch_request()\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]     rv = self.handle_user_exception(e)\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]     raise value\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]     rv = self.dispatch_request()\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.473089 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]   File "D:/TdPII\\app\\main.py", line 16, in mostrar\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.474086 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337]     return render_template('show_all.html', tabla=Datos.query.all(),nodos=Nodo.query.all() )\r, referer: http://localhost/
+[Thu Oct 24 18:22:21.474086 2019] [wsgi:error] [pid 13668:tid 1980] [client ::1:54337] NameError: name 'Datos' is not defined\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.796404 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356] mod_wsgi (pid=6500): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Thu Oct 24 18:23:13.796404 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356] mod_wsgi (pid=6500): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356] Traceback (most recent call last):\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356]   File "D:/TdPII/web.wsgi", line 4, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356]     from entrypoint import app as application\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356]     app = create_app()\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356]   File "D:/TdPII\\app\\__init__.py", line 19, in create_app\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356]     from .main import main as main_blueprint\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356]   File "D:/TdPII\\app\\main.py", line 3, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356]     from . import db, Datos, Nodo\r, referer: http://localhost/
+[Thu Oct 24 18:23:13.798401 2019] [wsgi:error] [pid 6500:tid 1976] [client ::1:54356] ImportError: cannot import name 'Datos' from 'app' (D:/TdPII\\app\\__init__.py)\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.049923 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363] mod_wsgi (pid=11860): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Thu Oct 24 18:23:49.050919 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363] mod_wsgi (pid=11860): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Thu Oct 24 18:23:49.051921 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363] Traceback (most recent call last):\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363]   File "D:/TdPII/web.wsgi", line 4, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363]     from entrypoint import app as application\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363]     app = create_app()\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363]   File "D:/TdPII\\app\\__init__.py", line 19, in create_app\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363]     from .main import main as main_blueprint\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363]   File "D:/TdPII\\app\\main.py", line 3, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363]     from basedatos import db, Datos, Nodo\r, referer: http://localhost/
+[Thu Oct 24 18:23:49.052922 2019] [wsgi:error] [pid 11860:tid 1996] [client ::1:54363] ModuleNotFoundError: No module named 'basedatos'\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.137670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372] mod_wsgi (pid=15164): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Thu Oct 24 18:24:50.137670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372] mod_wsgi (pid=15164): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Thu Oct 24 18:24:50.138671 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372] Traceback (most recent call last):\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.138671 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372]   File "D:/TdPII/web.wsgi", line 4, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.139670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372]     from entrypoint import app as application\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.139670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.139670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372]     app = create_app()\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.139670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372]   File "D:/TdPII\\app\\__init__.py", line 19, in create_app\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.139670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372]     from .main import main as main_blueprint\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.139670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372]   File "D:/TdPII\\app\\main.py", line 3, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.139670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372]     from basedatos import db, Datos, Nodo\r, referer: http://localhost/
+[Thu Oct 24 18:24:50.139670 2019] [wsgi:error] [pid 15164:tid 2008] [client ::1:54372] ModuleNotFoundError: No module named 'basedatos'\r, referer: http://localhost/
+[Thu Oct 24 18:25:33.294051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379] mod_wsgi (pid=8544): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Thu Oct 24 18:25:33.294051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379] mod_wsgi (pid=8544): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Thu Oct 24 18:25:33.295051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379] Traceback (most recent call last):\r, referer: http://localhost/
+[Thu Oct 24 18:25:33.295051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379]   File "D:/TdPII/web.wsgi", line 4, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:25:33.295051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379]     from entrypoint import app as application\r, referer: http://localhost/
+[Thu Oct 24 18:25:33.295051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379]   File "D:/TdPII\\entrypoint.py", line 1, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:25:33.295051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379]     from app import create_app\r, referer: http://localhost/
+[Thu Oct 24 18:25:33.295051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379]   File "D:/TdPII\\app\\__init__.py", line 3, in <module>\r, referer: http://localhost/
+[Thu Oct 24 18:25:33.295051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379]     import basedatos\r, referer: http://localhost/
+[Thu Oct 24 18:25:33.295051 2019] [wsgi:error] [pid 8544:tid 2008] [client ::1:54379] ModuleNotFoundError: No module named 'basedatos'\r, referer: http://localhost/
+[Thu Oct 24 18:59:05.834200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734] mod_wsgi (pid=1468): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 18:59:05.834200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734] mod_wsgi (pid=1468): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734] Traceback (most recent call last):\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]     from entrypoint import app as application\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]     app = create_app()\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]   File "D:/TdPII\\app\\__init__.py", line 15, in create_app\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]     from .auth import auth as auth_blueprint\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]   File "D:/TdPII\\app\\auth.py", line 3, in <module>\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]     from .models import User\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]   File "D:/TdPII\\app\\models.py", line 3, in <module>\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]     class Datos(db.Model):\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]   File "D:/TdPII\\app\\models.py", line 13, in Datos\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734]     eve = db.Column("evento", String(2))\r
+[Thu Oct 24 18:59:05.836200 2019] [wsgi:error] [pid 1468:tid 1984] [client ::1:54734] NameError: name 'String' is not defined\r
+[Thu Oct 24 18:59:11.795503 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735] mod_wsgi (pid=1468): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 18:59:11.795503 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735] mod_wsgi (pid=1468): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 18:59:11.796501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735] Traceback (most recent call last):\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]     from entrypoint import app as application\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]     app = create_app()\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]   File "D:/TdPII\\app\\__init__.py", line 15, in create_app\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]     from .auth import auth as auth_blueprint\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]   File "D:/TdPII\\app\\auth.py", line 3, in <module>\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]     from .models import User\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]   File "D:/TdPII\\app\\models.py", line 3, in <module>\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]     class Datos(db.Model):\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]   File "D:/TdPII\\app\\models.py", line 13, in Datos\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735]     eve = db.Column("evento", String(2))\r
+[Thu Oct 24 18:59:11.797501 2019] [wsgi:error] [pid 1468:tid 1976] [client ::1:54735] NameError: name 'String' is not defined\r
+[Thu Oct 24 19:01:28.476147 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754] mod_wsgi (pid=8088): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 19:01:28.476147 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754] mod_wsgi (pid=8088): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 19:01:28.478150 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754] Traceback (most recent call last):\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]     from entrypoint import app as application\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]     app = create_app()\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]   File "D:/TdPII\\app\\__init__.py", line 15, in create_app\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]     from .auth import auth as auth_blueprint\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]   File "D:/TdPII\\app\\auth.py", line 3, in <module>\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]     from .models import Usuario\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]   File "D:/TdPII\\app\\models.py", line 3, in <module>\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]     class Datos(db.Model):\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]   File "D:/TdPII\\app\\models.py", line 13, in Datos\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754]     eve = db.Column("evento", String(2))\r
+[Thu Oct 24 19:01:28.479148 2019] [wsgi:error] [pid 8088:tid 2036] [client ::1:54754] NameError: name 'String' is not defined\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763] [2019-10-24 19:02:16,412] ERROR in app: Exception on / [GET]\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763] Traceback (most recent call last):\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     response = self.full_dispatch_request()\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     rv = self.handle_user_exception(e)\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     reraise(exc_type, exc_value, tb)\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     raise value\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     rv = self.dispatch_request()\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:/TdPII\\app\\main.py", line 8, in index\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     return render_template('index.html')\r
+[Thu Oct 24 19:02:16.436735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\templating.py", line 140, in render_template\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     ctx.app,\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\templating.py", line 120, in _render\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     rv = template.render(context)\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\jinja2\\asyncsupport.py", line 76, in render\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     return original_render(self, *args, **kwargs)\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\jinja2\\environment.py", line 1008, in render\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     return self.environment.handle_exception(exc_info, True)\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\jinja2\\environment.py", line 780, in handle_exception\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     reraise(exc_type, exc_value, tb)\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\jinja2\\_compat.py", line 37, in reraise\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     raise value.with_traceback(tb)\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\app\\templates\\index.html", line 1, in top-level template code\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     {% extends "base.html" %}\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\app\\templates\\base.html", line 44, in top-level template code\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     <a href="{{ url_for('auth.signup') }}" class="navbar-item">\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\helpers.py", line 370, in url_for\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     return appctx.app.handle_url_build_error(error, endpoint, values)\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2215, in handle_url_build_error\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     reraise(exc_type, exc_value, tb)\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     raise value\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\helpers.py", line 358, in url_for\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     endpoint, values, method=method, force_external=external\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\routing.py", line 2020, in build\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763]     raise BuildError(endpoint, values, method, self)\r
+[Thu Oct 24 19:02:16.437735 2019] [wsgi:error] [pid 9964:tid 1984] [client ::1:54763] werkzeug.routing.BuildError: Could not build url for endpoint 'auth.signup'. Did you mean 'auth.signup_post' instead?\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787] [2019-10-24 19:06:24,379] ERROR in app: Exception on / [GET]\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787] Traceback (most recent call last):\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     response = self.full_dispatch_request()\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     rv = self.handle_user_exception(e)\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     reraise(exc_type, exc_value, tb)\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     raise value\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     rv = self.dispatch_request()\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:/TdPII\\app\\main.py", line 8, in index\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     return render_template('index.html')\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\templating.py", line 140, in render_template\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     ctx.app,\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\templating.py", line 120, in _render\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     rv = template.render(context)\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\jinja2\\asyncsupport.py", line 76, in render\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     return original_render(self, *args, **kwargs)\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\jinja2\\environment.py", line 1008, in render\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     return self.environment.handle_exception(exc_info, True)\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\jinja2\\environment.py", line 780, in handle_exception\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     reraise(exc_type, exc_value, tb)\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\jinja2\\_compat.py", line 37, in reraise\r
+[Thu Oct 24 19:06:24.385662 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     raise value.with_traceback(tb)\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\app\\templates\\index.html", line 1, in top-level template code\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     {% extends "base.html" %}\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\app\\templates\\base.html", line 44, in top-level template code\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     <a href="{{ url_for('auth.signup') }}" class="navbar-item">\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\helpers.py", line 370, in url_for\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     return appctx.app.handle_url_build_error(error, endpoint, values)\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2215, in handle_url_build_error\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     reraise(exc_type, exc_value, tb)\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     raise value\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\helpers.py", line 358, in url_for\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     endpoint, values, method=method, force_external=external\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\routing.py", line 2020, in build\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787]     raise BuildError(endpoint, values, method, self)\r
+[Thu Oct 24 19:06:24.386664 2019] [wsgi:error] [pid 6792:tid 2000] [client ::1:54787] werkzeug.routing.BuildError: Could not build url for endpoint 'auth.signup'. Did you mean 'auth.signup_post' instead?\r
+[Thu Oct 24 19:12:53.764518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] [2019-10-24 19:12:53,654] ERROR in app: Exception on /signup [GET]\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.764518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] Traceback (most recent call last):\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1249, in _execute_context\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     cursor, statement, parameters, context\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\default.py", line 580, in do_execute\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     cursor.execute(statement, parameters)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 209, in execute\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     res = self._query(query)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 315, in _query\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     db.query(q)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\connections.py", line 226, in query\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     _mysql.connection.query(self, query)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] MySQLdb._exceptions.OperationalError: (1048, "Column 'email' cannot be null")\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] \r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] The above exception was the direct cause of the following exception:\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] \r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] Traceback (most recent call last):\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     response = self.full_dispatch_request()\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     rv = self.handle_user_exception(e)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     raise value\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     rv = self.dispatch_request()\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:/TdPII\\app\\auth.py", line 29, in signup_post\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     db.session.commit()\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     return getattr(self.registry(), name)(*args, **kwargs)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1027, in commit\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     self.transaction.commit()\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 494, in commit\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     self._prepare_impl()\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 473, in _prepare_impl\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     self.session.flush()\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2470, in flush\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     self._flush(objects)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2608, in _flush\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.765518 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     transaction.rollback(_capture_exception=True)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\langhelpers.py", line 68, in __exit__\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     compat.reraise(exc_type, exc_value, exc_tb)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 153, in reraise\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     raise value\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2568, in _flush\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     flush_context.execute()\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py", line 422, in execute\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     rec.execute(self)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py", line 589, in execute\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     uow,\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\persistence.py", line 245, in save_obj\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     insert,\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\persistence.py", line 1137, in _emit_insert_statements\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     statement, params\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 988, in execute\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     return meth(self, multiparams, params)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\sql\\elements.py", line 287, in _execute_on_connection\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     return connection._execute_clauseelement(self, multiparams, params)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1107, in _execute_clauseelement\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     distilled_params,\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1253, in _execute_context\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     e, statement, parameters, cursor, context\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1473, in _handle_dbapi_exception\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     util.raise_from_cause(sqlalchemy_exception, exc_info)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 398, in raise_from_cause\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     reraise(type(exception), exception, tb=exc_tb, cause=cause)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 152, in reraise\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     raise value.with_traceback(tb)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1249, in _execute_context\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     cursor, statement, parameters, context\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\default.py", line 580, in do_execute\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     cursor.execute(statement, parameters)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 209, in execute\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     res = self._query(query)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 315, in _query\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     db.query(q)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\connections.py", line 226, in query\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852]     _mysql.connection.query(self, query)\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] sqlalchemy.exc.OperationalError: (MySQLdb._exceptions.OperationalError) (1048, "Column 'email' cannot be null")\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] [SQL: INSERT INTO usuario (email, contrasenia, razon_social) VALUES (%s, %s, %s)]\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] [parameters: (None, 'sha256$58zbFTS7$8c44afa244dfd276e2e8b49746591d2b5f7ebd6ef17d2c896c2acceb54c3f0be', None)]\r, referer: http://localhost/
+[Thu Oct 24 19:12:53.766515 2019] [wsgi:error] [pid 5988:tid 1988] [client ::1:54852] (Background on this error at: http://sqlalche.me/e/e3q8)\r, referer: http://localhost/
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] [2019-10-24 19:22:07,440] ERROR in app: Exception on /signup [POST]\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] Traceback (most recent call last):\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1249, in _execute_context\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     cursor, statement, parameters, context\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\default.py", line 580, in do_execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     cursor.execute(statement, parameters)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 209, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     res = self._query(query)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 315, in _query\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     db.query(q)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\connections.py", line 226, in query\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     _mysql.connection.query(self, query)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'PRUEBA' for key 'razon_social'")\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] \r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] The above exception was the direct cause of the following exception:\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] \r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] Traceback (most recent call last):\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     response = self.full_dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     rv = self.handle_user_exception(e)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.452391 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     raise value\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     rv = self.dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:/TdPII\\app\\auth.py", line 33, in signup_post\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     db.session.commit()\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     return getattr(self.registry(), name)(*args, **kwargs)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1027, in commit\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     self.transaction.commit()\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 494, in commit\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     self._prepare_impl()\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 473, in _prepare_impl\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     self.session.flush()\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2470, in flush\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     self._flush(objects)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2608, in _flush\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     transaction.rollback(_capture_exception=True)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\langhelpers.py", line 68, in __exit__\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     compat.reraise(exc_type, exc_value, exc_tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 153, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     raise value\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2568, in _flush\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     flush_context.execute()\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py", line 422, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     rec.execute(self)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py", line 589, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     uow,\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\persistence.py", line 245, in save_obj\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     insert,\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\persistence.py", line 1137, in _emit_insert_statements\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     statement, params\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 988, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     return meth(self, multiparams, params)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\sql\\elements.py", line 287, in _execute_on_connection\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     return connection._execute_clauseelement(self, multiparams, params)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1107, in _execute_clauseelement\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     distilled_params,\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1253, in _execute_context\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     e, statement, parameters, cursor, context\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1473, in _handle_dbapi_exception\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     util.raise_from_cause(sqlalchemy_exception, exc_info)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 398, in raise_from_cause\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     reraise(type(exception), exception, tb=exc_tb, cause=cause)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 152, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     raise value.with_traceback(tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1249, in _execute_context\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     cursor, statement, parameters, context\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\default.py", line 580, in do_execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     cursor.execute(statement, parameters)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 209, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     res = self._query(query)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 315, in _query\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     db.query(q)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\connections.py", line 226, in query\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.453392 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897]     _mysql.connection.query(self, query)\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.454390 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] sqlalchemy.exc.IntegrityError: (MySQLdb._exceptions.IntegrityError) (1062, "Duplicate entry 'PRUEBA' for key 'razon_social'")\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.454390 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] [SQL: INSERT INTO usuario (email, contrasenia, razon_social) VALUES (%s, %s, %s)]\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.454390 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] [parameters: ('nodo@prueba.com', 'sha256$2hRWtXjI$bec56128364e3f6fb2f205260be769e78aa46541efaff889553755da4fe022c0', 'PRUEBA')]\r, referer: http://localhost/signup
+[Thu Oct 24 19:22:07.454390 2019] [wsgi:error] [pid 10620:tid 1996] [client ::1:54897] (Background on this error at: http://sqlalche.me/e/gkpj)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.291211 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] [2019-10-24 19:25:07,288] ERROR in app: Exception on /signup [POST]\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.291211 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] Traceback (most recent call last):\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.291211 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1249, in _execute_context\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     cursor, statement, parameters, context\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\default.py", line 580, in do_execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     cursor.execute(statement, parameters)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 209, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     res = self._query(query)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 315, in _query\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     db.query(q)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\connections.py", line 226, in query\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     _mysql.connection.query(self, query)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'PRUEBA' for key 'razon_social'")\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] \r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] The above exception was the direct cause of the following exception:\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] \r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] Traceback (most recent call last):\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     response = self.full_dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     rv = self.handle_user_exception(e)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     raise value\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     rv = self.dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:/TdPII\\app\\auth.py", line 33, in signup_post\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     db.session.commit()\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     return getattr(self.registry(), name)(*args, **kwargs)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1027, in commit\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     self.transaction.commit()\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.292254 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 494, in commit\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     self._prepare_impl()\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 473, in _prepare_impl\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     self.session.flush()\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2470, in flush\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     self._flush(objects)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2608, in _flush\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     transaction.rollback(_capture_exception=True)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\langhelpers.py", line 68, in __exit__\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     compat.reraise(exc_type, exc_value, exc_tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 153, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     raise value\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2568, in _flush\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     flush_context.execute()\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py", line 422, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     rec.execute(self)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py", line 589, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     uow,\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\persistence.py", line 245, in save_obj\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     insert,\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\persistence.py", line 1137, in _emit_insert_statements\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     statement, params\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 988, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     return meth(self, multiparams, params)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\sql\\elements.py", line 287, in _execute_on_connection\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     return connection._execute_clauseelement(self, multiparams, params)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1107, in _execute_clauseelement\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     distilled_params,\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1253, in _execute_context\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     e, statement, parameters, cursor, context\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1473, in _handle_dbapi_exception\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     util.raise_from_cause(sqlalchemy_exception, exc_info)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.293239 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 398, in raise_from_cause\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     reraise(type(exception), exception, tb=exc_tb, cause=cause)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 152, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     raise value.with_traceback(tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1249, in _execute_context\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     cursor, statement, parameters, context\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\default.py", line 580, in do_execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     cursor.execute(statement, parameters)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 209, in execute\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     res = self._query(query)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 315, in _query\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     db.query(q)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\connections.py", line 226, in query\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928]     _mysql.connection.query(self, query)\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] sqlalchemy.exc.IntegrityError: (MySQLdb._exceptions.IntegrityError) (1062, "Duplicate entry 'PRUEBA' for key 'razon_social'")\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] [SQL: INSERT INTO usuario (email, contrasenia, razon_social) VALUES (%s, %s, %s)]\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] [parameters: ('nodo@prueba.com', 'sha256$mdTtL8Cq$441b29c24ce2bb6b344314b2df73be968f8f46a178b3d439c9070eeaac20edbe', 'PRUEBA')]\r, referer: http://localhost/signup
+[Thu Oct 24 19:25:07.294205 2019] [wsgi:error] [pid 10620:tid 2000] [client ::1:54928] (Background on this error at: http://sqlalche.me/e/gkpj)\r, referer: http://localhost/signup
+[Thu Oct 24 19:31:29.886410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996] mod_wsgi (pid=10568): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 19:31:29.886410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996] mod_wsgi (pid=10568): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996] Traceback (most recent call last):\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996]     from entrypoint import app as application\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996]     app = create_app()\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996]   File "D:/TdPII\\app\\__init__.py", line 19, in create_app\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996]     from .main import main as main_blueprint\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996]   File "D:/TdPII\\app\\main.py", line 19, in <module>\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996]     @app.route('/poster', methods=["GET"])\r
+[Thu Oct 24 19:31:29.888410 2019] [wsgi:error] [pid 10568:tid 1980] [client ::1:54996] NameError: name 'app' is not defined\r
+[Thu Oct 24 19:31:50.180459 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997] mod_wsgi (pid=11776): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 19:31:50.180459 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997] mod_wsgi (pid=11776): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997] Traceback (most recent call last):\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]     from entrypoint import app as application\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]     app = create_app()\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]   File "D:/TdPII\\app\\__init__.py", line 19, in create_app\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]     from .main import main as main_blueprint\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]   File "D:/TdPII\\app\\main.py", line 19, in <module>\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]     @app.route('/poster', methods=["GET"])\r
+[Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997] NameError: name 'app' is not defined\r

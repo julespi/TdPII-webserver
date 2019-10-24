@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Table, Column, Float, Integer, String
+from . import db
 
-db = SQLAlchemy()
 
 class Datos(db.Model):
     __tablename__ = 'datos'
