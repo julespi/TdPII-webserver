@@ -7471,3 +7471,150 @@
 [Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]   File "D:/TdPII\\app\\main.py", line 19, in <module>\r
 [Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997]     @app.route('/poster', methods=["GET"])\r
 [Thu Oct 24 19:31:50.182461 2019] [wsgi:error] [pid 11776:tid 2000] [client ::1:54997] NameError: name 'app' is not defined\r
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027] [2019-10-24 19:35:54,612] ERROR in app: Exception on /signup [POST]\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027] Traceback (most recent call last):\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     response = self.full_dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     rv = self.handle_user_exception(e)\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.619177 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     raise value\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     rv = self.dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:/TdPII\\app\\auth.py", line 25, in signup_post\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     flash('Email address already exists')\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\helpers.py", line 423, in flash\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     session["_flashes"] = flashes\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\local.py", line 351, in __setitem__\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     self._get_current_object()[key] = value\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\sessions.py", line 103, in _fail\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027]     "The session is unavailable because no secret "\r, referer: http://localhost/signup
+[Thu Oct 24 19:35:54.620181 2019] [wsgi:error] [pid 10820:tid 1976] [client ::1:55027] RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.575096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037] [2019-10-24 19:36:44,571] ERROR in app: Exception on /signup [POST]\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.575096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037] Traceback (most recent call last):\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     response = self.full_dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     rv = self.handle_user_exception(e)\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     raise value\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     rv = self.dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:/TdPII\\app\\auth.py", line 25, in signup_post\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     flash('Email address already exists')\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\helpers.py", line 423, in flash\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     session["_flashes"] = flashes\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\local.py", line 351, in __setitem__\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     self._get_current_object()[key] = value\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\sessions.py", line 103, in _fail\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037]     "The session is unavailable because no secret "\r, referer: http://localhost/signup
+[Thu Oct 24 19:36:44.576096 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55037] RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048] [2019-10-24 19:37:39,950] ERROR in app: Exception on /signup [POST]\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048] Traceback (most recent call last):\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     response = self.full_dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     rv = self.handle_user_exception(e)\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     raise value\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     rv = self.dispatch_request()\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.952071 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:/TdPII\\app\\auth.py", line 25, in signup_post\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.953072 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     flash('Email address already exists')\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.953072 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\helpers.py", line 423, in flash\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.953072 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     session["_flashes"] = flashes\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.953072 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\local.py", line 351, in __setitem__\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.953072 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     self._get_current_object()[key] = value\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.953072 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\sessions.py", line 103, in _fail\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.953072 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048]     "The session is unavailable because no secret "\r, referer: http://localhost/signup
+[Thu Oct 24 19:37:39.953072 2019] [wsgi:error] [pid 14532:tid 1976] [client ::1:55048] RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.\r, referer: http://localhost/signup
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176] [2019-10-24 20:07:35,638] ERROR in app: Exception on /login [POST]\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176] Traceback (most recent call last):\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]     response = self.full_dispatch_request()\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]     rv = self.handle_user_exception(e)\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]     raise value\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]     rv = self.dispatch_request()\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]   File "D:/TdPII\\app\\auth.py", line 26, in login_post\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176]     if not usuario or not check_password_hash(usuario.password, password):\r, referer: http://localhost/login
+[Thu Oct 24 20:07:35.641733 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55176] AttributeError: 'Usuario' object has no attribute 'password'\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185] [2019-10-24 20:07:49,844] ERROR in app: Exception on /login [POST]\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185] Traceback (most recent call last):\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]     response = self.full_dispatch_request()\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]     rv = self.handle_user_exception(e)\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.845529 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.846521 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]     raise value\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.846521 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.846521 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]     rv = self.dispatch_request()\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.846521 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.846521 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.846521 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]   File "D:/TdPII\\app\\auth.py", line 26, in login_post\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.846521 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185]     if not usuario or not check_password_hash(usuario.password, password):\r, referer: http://localhost/login
+[Thu Oct 24 20:07:49.846521 2019] [wsgi:error] [pid 8452:tid 1976] [client ::1:55185] AttributeError: 'Usuario' object has no attribute 'password'\r, referer: http://localhost/login
+[Thu Oct 24 20:08:21.662142 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193] mod_wsgi (pid=7964): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 20:08:21.663145 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193] mod_wsgi (pid=7964): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Thu Oct 24 20:08:21.664139 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193] Traceback (most recent call last):\r
+[Thu Oct 24 20:08:21.664139 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Thu Oct 24 20:08:21.664139 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193]     from entrypoint import app as application\r
+[Thu Oct 24 20:08:21.664139 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r
+[Thu Oct 24 20:08:21.664139 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193]     app = create_app()\r
+[Thu Oct 24 20:08:21.664139 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193]   File "D:/TdPII\\app\\__init__.py", line 16, in create_app\r
+[Thu Oct 24 20:08:21.664139 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193]     login_manager = LoginManager()\r
+[Thu Oct 24 20:08:21.664139 2019] [wsgi:error] [pid 7964:tid 2000] [client ::1:55193] NameError: name 'LoginManager' is not defined\r
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209] [2019-10-24 20:09:28,562] ERROR in app: Exception on /login [POST]\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209] Traceback (most recent call last):\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]     response = self.full_dispatch_request()\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]     rv = self.handle_user_exception(e)\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]     raise value\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]     rv = self.dispatch_request()\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]   File "D:/TdPII\\app\\auth.py", line 26, in login_post\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209]     if not usuario or not check_password_hash(usuario.password, password):\r, referer: http://localhost/login
+[Thu Oct 24 20:09:28.564698 2019] [wsgi:error] [pid 3588:tid 2024] [client ::1:55209] AttributeError: 'Usuario' object has no attribute 'password'\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224] [2019-10-24 20:11:31,431] ERROR in app: Exception on /login [POST]\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224] Traceback (most recent call last):\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]     response = self.full_dispatch_request()\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]     rv = self.handle_user_exception(e)\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]     reraise(exc_type, exc_value, tb)\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]     raise value\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.433761 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]     rv = self.dispatch_request()\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.434759 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.434759 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]     return self.view_functions[rule.endpoint](**req.view_args)\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.434759 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]   File "D:/TdPII\\app\\auth.py", line 31, in login_post\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.434759 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224]     login_user(usuario, remember=remember)\r, referer: http://localhost/login
+[Thu Oct 24 20:11:31.434759 2019] [wsgi:error] [pid 6668:tid 2008] [client ::1:55224] NameError: name 'login_user' is not defined\r, referer: http://localhost/login

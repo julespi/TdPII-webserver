@@ -1,5 +1,6 @@
 from . import db
 from sqlalchemy import Table, Column, Float, Integer, String
+from flask_login import UserMixin
 
 class Datos(db.Model):
     __tablename__ = 'datos'
@@ -42,7 +43,7 @@ class Nodo(db.Model):
         self.nombre = nombre
         self.descripcion = descripcion
 
-class Usuario(db.Model):
+class Usuario(UserMixin, db.Model):
     __tablename__ = 'usuario'
     id = db.Column("id", db.INTEGER, primary_key=True)
     email = db.Column("email", String(50), unique=True)
