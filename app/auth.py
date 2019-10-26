@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import login_user
+from flask_login import login_user, logout_user, login_required
 from .models import Usuario 
 from . import db
 
@@ -10,9 +10,6 @@ auth = Blueprint('auth', __name__)
 def login():
     return render_template('login.html')
 
-@auth.route('/signup')
-def signup():
-    return render_template('signup.html')
 
 @auth.route('/login', methods=['POST'])
 def login_post():
@@ -31,6 +28,10 @@ def login_post():
     # if the above check passes, then we know the user has the right credentials
     login_user(usuario, remember=remember)
     return redirect(url_for('main.profile'))
+
+@auth.route('/signup')
+def signup():
+    return render_template('signup.html')
 
 @auth.route('/signup', methods=['POST'])
 def signup_post():
@@ -54,5 +55,7 @@ def signup_post():
     return redirect(url_for('auth.login'))
 
 @auth.route('/logout')
+@login_required
 def logout():
-    return 'Logout'
+    logout_user()
+    return redirect(url_for('main.index'))

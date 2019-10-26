@@ -30,23 +30,29 @@
                     <div id="navbarMenuHeroA" class="navbar-menu">
                         <div class="navbar-end">
                             <a href="{{ url_for('main.index') }}" class="navbar-item">
-                                Home
+                                Inicio
                             </a>
                             <a href="{{ url_for('main.mostrar') }}" class="navbar-item">
                                 Mostrar
                             </a>
+                            {% if current_user.is_authenticated %}
                             <a href="{{ url_for('main.profile') }}" class="navbar-item">
-                                Profile
+                                Perfil
                             </a>
+                            {% endif %}
+                            {% if not current_user.is_authenticated %}
                             <a href="{{ url_for('auth.login') }}" class="navbar-item">
-                                Login
+                                Iniciar Sesion
                             </a>
                             <a href="{{ url_for('auth.signup') }}" class="navbar-item">
-                                Sign Up
+                                Registrarse
                             </a>
+                            {% endif %}
+                            {% if current_user.is_authenticated %}
                             <a href="{{ url_for('auth.logout') }}" class="navbar-item">
-                                Logout
+                                Cerrar Sesion
                             </a>
+                            {% endif %}
                         </div>
                     </div>
                 <!-- </div> -->
