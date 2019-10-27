@@ -16,7 +16,7 @@ class DevMarcos:
     DEBUG = True
     SECRET_KEY = 'asdasdKMASDbgbfpAPS_)()'
     SESSION_COOKIE_NAME = 'TdPII_cookie'
-    SQLALCHEMY_DATABASE_URI = 'mysql://usuario:asdasd@localhost/g20_tdp2'
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:''@localhost/g20_tdp2'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     
