@@ -32,3 +32,14 @@ def poster():
     db.session.add(algo)
     db.session.commit()
     return "listo"
+
+@main.route('/postjson', methods = ['POST'])
+def postJsonHandler():
+    content = request.get_json()
+    var1 = content.get("sensorType")
+    var2 = content.get("values")
+    var3 = content.get("timestamps")
+    print (var1)
+    print (var2)
+    print (var3)
+    return 'JSON posted'

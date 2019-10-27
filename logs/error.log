@@ -7693,3 +7693,70 @@
 [Sat Oct 26 09:36:03.448873 2019] [wsgi:error] [pid 6124:tid 1984] [client ::1:55922]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\local.py", line 348, in __getattr__\r, referer: http://localhost/login
 [Sat Oct 26 09:36:03.448873 2019] [wsgi:error] [pid 6124:tid 1984] [client ::1:55922]     return getattr(self._get_current_object(), name)\r, referer: http://localhost/login
 [Sat Oct 26 09:36:03.448873 2019] [wsgi:error] [pid 6124:tid 1984] [client ::1:55922] AttributeError: 'Usuario' object has no attribute 'razon_social'\r, referer: http://localhost/login
+[Sun Oct 27 17:07:44.796917 2019] [wsgi:error] [pid 14112:tid 1988] [client ::1:57831] {'sensorType': 'Temperature', 'values': [20, 21, 23], 'timestamps': ['10:10', '10:20', '10:30']}\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068] [2019-10-27 17:35:22,850] ERROR in app: Exception on /postjson [POST]\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068] Traceback (most recent call last):\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]     response = self.full_dispatch_request()\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]     rv = self.handle_user_exception(e)\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]     reraise(exc_type, exc_value, tb)\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]     raise value\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]     rv = self.dispatch_request()\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]   File "D:/TdPII\\app\\main.py", line 39, in postJsonHandler\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068]     var1 = cotent.get("sensorType")\r
+[Sun Oct 27 17:35:22.855094 2019] [wsgi:error] [pid 4968:tid 2020] [client ::1:58068] NameError: name 'cotent' is not defined\r
+[Sun Oct 27 17:36:04.232236 2019] [wsgi:error] [pid 996:tid 1980] [client ::1:58073] Temperature\r
+[Sun Oct 27 17:36:04.232236 2019] [wsgi:error] [pid 996:tid 1980] [client ::1:58073] [20, 21, 23]\r
+[Sun Oct 27 17:36:04.232236 2019] [wsgi:error] [pid 996:tid 1980] [client ::1:58073] ['10:10', '10:20', '10:30']\r
+[Sun Oct 27 18:19:03.098247 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] mod_wsgi (pid=5616): Failed to exec Python script file 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Sun Oct 27 18:19:03.098247 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] mod_wsgi (pid=5616): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'., referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] Traceback (most recent call last):\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\utils.py", line 556, in import_string\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     return getattr(module, obj_name)\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] AttributeError: module 'config' has no attribute 'Configg'\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] During handling of the above exception, another exception occurred:\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] Traceback (most recent call last):\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\utils.py", line 558, in import_string\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     raise ImportError(e)\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] ImportError: module 'config' has no attribute 'Configg'\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] During handling of the above exception, another exception occurred:\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] Traceback (most recent call last):\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:/TdPII/web.wsgi", line 4, in <module>\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     from entrypoint import app as application\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     app = create_app()\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:/TdPII\\app\\__init__.py", line 10, in create_app\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     app.config.from_object('config.Configg')\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\config.py", line 174, in from_object\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     obj = import_string(obj)\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\utils.py", line 563, in import_string\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     ImportStringError, ImportStringError(import_name, e), sys.exc_info()[2]\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.108250 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\_compat.py", line 147, in reraise\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     raise value.with_traceback(tb)\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]   File "D:\\TdPII\\env1\\lib\\site-packages\\werkzeug\\utils.py", line 558, in import_string\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532]     raise ImportError(e)\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] werkzeug.utils.ImportStringError: import_string() failed for 'config.Configg'. Possible reasons are:\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] - missing __init__.py in a package;\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] - package or module path not included in sys.path;\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] - duplicated package or module name taking precedence in sys.path;\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] - missing module, class, function or variable;\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] Debugged import:\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] - 'config' found in 'D:/TdPII\\\\config.py'.\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] - 'config.Configg' not found.\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] Original exception:\r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] \r, referer: http://localhost/
+[Sun Oct 27 18:19:03.109242 2019] [wsgi:error] [pid 5616:tid 1976] [client ::1:58532] ImportError: module 'config' has no attribute 'Configg'\r, referer: http://localhost/

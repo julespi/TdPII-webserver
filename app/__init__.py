@@ -7,11 +7,11 @@ db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
+    app.config.from_object('config.DevJulian')
+    # app.config['SECRET_KEY'] = 'asdasdKMASDbgbfpAPS_)()'
 
-    app.config['SECRET_KEY'] = 'asdasdKMASDbgbfpAPS_)()'
-
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://usuario:asdasd@localhost/g20_tdp2'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://usuario:asdasd@localhost/g20_tdp2'
+    # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
 
     login_manager = LoginManager()

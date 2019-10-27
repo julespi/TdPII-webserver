@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 from flask_sqlalchemy import SQLAlchemy
+from .models import Datos
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://usuario:asdasd@localhost/g20_tdp2'
@@ -31,6 +32,12 @@ def poster():
     db.session.add(algo)
     db.session.commit()
     return "listo"
+
+@app.route('/postjson', methods = ['POST'])
+def postJsonHandler():
+    content = request.get_json()
+    print (content)
+    return 'JSON posted'
 
 @app.route('/version', methods=["GET"])
 def version():
