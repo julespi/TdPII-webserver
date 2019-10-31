@@ -3727,3 +3727,35 @@
 ::1 - - [27/Oct/2019:18:19:02 -0300] "GET /mostrar HTTP/1.1" 500 1310
 ::1 - - [27/Oct/2019:18:19:32 -0300] "GET /mostrar HTTP/1.1" 200 76685
 ::1 - - [27/Oct/2019:18:20:28 -0300] "GET /mostrar HTTP/1.1" 200 76685
+::1 - - [27/Oct/2019:18:45:50 -0300] "GET / HTTP/1.1" 200 2700
+::1 - - [31/Oct/2019:18:56:43 -0300] "GET /version?nodo=4&timestamp=%222019-10-09%2018:59:00%22&temp=20.00&vol=0.00&lat=34.91&long=57.96&evento=0 HTTP/1.1" 200 10
+::1 - - [31/Oct/2019:18:57:48 -0300] "GET /version?nodo=4&timestamp=%222019-10-09%2018:59:00%22&firmware=hola HTTP/1.1" 200 10
+::1 - - [31/Oct/2019:18:57:56 -0300] "GET /phpmyadmin/ HTTP/1.1" 200 15147
+::1 - - [31/Oct/2019:18:58:00 -0300] "GET /phpmyadmin/js/messages.php?l=es&v=4.9.0.1 HTTP/1.1" 200 9919
+::1 - - [31/Oct/2019:18:58:00 -0300] "GET /phpmyadmin/phpmyadmin.css.php?nocache=6138592379ltr&server=1 HTTP/1.1" 200 20812
+::1 - - [31/Oct/2019:18:58:00 -0300] "GET /phpmyadmin/js/whitelist.php?v=4.9.0.1 HTTP/1.1" 200 491
+::1 - - [31/Oct/2019:18:58:02 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1426
+::1 - - [31/Oct/2019:18:58:02 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1524
+::1 - - [31/Oct/2019:18:58:02 -0300] "POST /phpmyadmin/navigation.php?ajax_request=1 HTTP/1.1" 200 2274
+::1 - - [31/Oct/2019:18:58:02 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1419
+::1 - - [31/Oct/2019:18:58:02 -0300] "POST /phpmyadmin/version_check.php HTTP/1.1" 200 64
+::1 - - [31/Oct/2019:18:58:02 -0300] "POST /phpmyadmin/db_structure.php?ajax_request=1&favorite_table=1&sync_favorite_tables=1 HTTP/1.1" 200 146
+::1 - - [31/Oct/2019:18:58:04 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1419
+::1 - - [31/Oct/2019:18:58:07 -0300] "GET /phpmyadmin/db_structure.php?server=1&db=g20_tdp2&ajax_request=true&ajax_page_request=true&_nocache=1572559087257873980&token=2yy%25%7DqoV9JaS%5DU7J HTTP/1.1" 200 5469
+::1 - - [31/Oct/2019:18:58:08 -0300] "GET /phpmyadmin/navigation.php?ajax_request=1&aPath=cm9vdA%3D%3D.ZzIwX3RkcDI%3D&vPath=cm9vdA%3D%3D.ZzIwX3RkcDI%3D&pos=0&pos2_name=&pos2_value=&searchClause=&searchClause2=&_nocache=1572559088195722804&token=2yy%25%7DqoV9JaS%5DU7J HTTP/1.1" 200 1947
+::1 - - [31/Oct/2019:18:58:10 -0300] "GET /phpmyadmin/sql.php?server=1&db=g20_tdp2&table=nodo&pos=0&ajax_request=true&ajax_page_request=true&_nocache=1572559090271967872&token=2yy%25%7DqoV9JaS%5DU7J HTTP/1.1" 200 7851
+::1 - - [31/Oct/2019:18:58:11 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1572559091488781169&token=2yy%25%7DqoV9JaS%5DU7J HTTP/1.1" 200 1539
+::1 - - [31/Oct/2019:18:58:36 -0300] "GET /version?nodo=4&timestamp=2019-10-09%2018:59:00&firmware=chau HTTP/1.1" 200 10
+::1 - - [31/Oct/2019:18:58:39 -0300] "GET /phpmyadmin/sql.php?server=1&db=g20_tdp2&table=nodo&pos=0 HTTP/1.1" 200 14014
+::1 - - [31/Oct/2019:18:58:40 -0300] "GET /phpmyadmin/phpmyadmin.css.php?nocache=6139058516ltr&server=1 HTTP/1.1" 200 20812
+::1 - - [31/Oct/2019:18:58:40 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1431
+::1 - - [31/Oct/2019:18:58:40 -0300] "POST /phpmyadmin/navigation.php?ajax_request=1 HTTP/1.1" 200 2649
+::1 - - [31/Oct/2019:18:58:40 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1526
+192.168.1.104 - - [31/Oct/2019:18:58:41 -0300] "GET /version?nodo=4&timestamp=2019-10-20%2019:49:00&firmware=20191031" 200 10
+::1 - - [31/Oct/2019:18:58:41 -0300] "POST /phpmyadmin/ajax.php HTTP/1.1" 200 1422
+::1 - - [31/Oct/2019:18:58:41 -0300] "GET /phpmyadmin/index.php?ajax_request=1&recent_table=1&no_debug=true&_nocache=1572559121053699011&token=2yy%25%7DqoV9JaS%5DU7J HTTP/1.1" 200 1539
+::1 - - [31/Oct/2019:18:58:41 -0300] "GET /phpmyadmin/favicon.ico HTTP/1.1" 200 22486
+192.168.1.104 - - [31/Oct/2019:18:58:49 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=85.00&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+192.168.1.104 - - [31/Oct/2019:18:59:04 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=22.25&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+192.168.1.104 - - [31/Oct/2019:18:59:19 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=22.25&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
+192.168.1.104 - - [31/Oct/2019:18:59:34 -0300] "GET /poster?nodo=4&timestamp=2019-10-20%2019:49:00&temp=22.25&vol=0.00&lat=34.91&long=57.96&evento=0" 200 5
