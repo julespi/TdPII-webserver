@@ -1,10 +1,11 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import login_user, logout_user, login_required
-from .models import Usuario 
+from flask_login import login_user, logout_user, login_required, current_user
+from .models import Usuario, Nodo, Datos
 from . import db
 
 auth = Blueprint('auth', __name__)
+
 
 @auth.route('/login')
 def login():
@@ -20,18 +21,29 @@ def login_post():
     usuario = Usuario.query.filter_by(email=email).first()
 
     # check if user actually exists
-    # take the user supplied password, hash it, and compare it to the hashed password in database
-    if not usuario or not check_password_hash(usuario.contrasenia, password): 
+    # take the user supplied password, hash it, and compare it to the hashed
+    # password in database
+    if not usuario or not check_password_hash(usuario.contrasenia, password):
         flash('Please check your login details and try again.')
-        return redirect(url_for('auth.login')) # if user doesn't exist or password is wrong, reload the page
+        # if user doesn't exist or password is wrong, reload the page
+        return redirect(url_for('auth.login'))
 
-    # if the above check passes, then we know the user has the right credentials
+    # if the above check passes, then we know the user has the right
+    # credentials
     login_user(usuario, remember=remember)
-    return redirect(url_for('main.profile'))
+    return redirect(url_for('auth.profile'))
+
+
+@auth.route('/profile')
+@login_required
+def profile():
+    return render_template('profile.html', name=current_user.razonSocial)
+
 
 @auth.route('/signup')
 def signup():
     return render_template('signup.html')
+
 
 @auth.route('/signup', methods=['POST'])
 def signup_post():
@@ -39,14 +51,19 @@ def signup_post():
     razon_social = request.form.get("razonSocial")
     password = request.form.get("password")
 
-    usuario = Usuario.query.filter_by(email=email).first() # if this returns a user, then the email already exists in database
+    # if this returns a user, then the email already exists in database
+    usuario = Usuario.query.filter_by(email=email).first()
 
-    if usuario: # if a user is found, we want to redirect back to signup page so user can try again
+    """ if usuario:  # if a user is found, we want to redirect back to signup
+        page so user can try again
         flash('Email address already exists')
-        return redirect(url_for('auth.signup'))
-    
-    # create new user with the form data. Hash the password so plaintext version isn't saved.
-    new_user = Usuario(email=email, razonSocial=razon_social, contrasenia=generate_password_hash(password, method='sha256'))
+        return redirect(url_for('auth.signup')) """
+
+    # create new user with the form data. Hash the password so plaintext
+    # version isn't saved.
+    new_user = Usuario(email=email, razonSocial=razon_social,
+                       contrasenia=generate_password_hash(password,
+                       method='sha256'))
 
     # add the new user to the database
     db.session.add(new_user)
@@ -54,8 +71,17 @@ def signup_post():
 
     return redirect(url_for('auth.login'))
 
+
 @auth.route('/logout')
 @login_required
 def logout():
     logout_user()
     return redirect(url_for('main.index'))
+
+
+@auth.route("/mostrar")
+@login_required
+def mostrar():
+    lista_de_nodos = Nodo.query.filter_by(cliente=current_user.id).with_entities(Nodo.nodo).all()
+    print(lista_de_nodos)
+    return render_template('show_all.html', tabla=Datos.query.filter(Datos.nodo.in_(lista_de_nodos)), nodos=Nodo.query.filter_by(cliente=current_user.id))

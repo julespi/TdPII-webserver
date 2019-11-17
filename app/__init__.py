@@ -1,17 +1,14 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager 
+from flask_login import LoginManager
 
 # # inicializamos SQLAlchemy para usarlo en models
 db = SQLAlchemy()
 
+
 def create_app():
     app = Flask(__name__)
     app.config.from_object('config.DevJulian')
-    # app.config['SECRET_KEY'] = 'asdasdKMASDbgbfpAPS_)()'
-
-    # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://usuario:asdasd@localhost/g20_tdp2'
-    # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
 
     login_manager = LoginManager()
@@ -22,7 +19,8 @@ def create_app():
 
     @login_manager.user_loader
     def load_user(user_id):
-        # since the user_id is just the primary key of our user table, use it in the query for the user
+        # since the user_id is just the primary key of our user table,
+        # use it in the query for the user
         return Usuario.query.get(int(user_id))
 
     # blueprint para las rutas con autenticacion

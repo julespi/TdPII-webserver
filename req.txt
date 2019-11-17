@@ -1,5 +1,6 @@
 antiorm==1.2.1
 astroid==2.3.0
+autopep8==1.4.4
 Click==7.0
 colorama==0.4.1
 Flask==1.1.1
@@ -16,6 +17,7 @@ mccabe==0.6.1
 mod-wsgi==4.6.8
 mysqlclient==1.4.4
 protobuf==3.10.0
+pycodestyle==2.5.0
 pylint==2.4.1
 pylint-flask==0.6
 pylint-plugin-utils==0.6
