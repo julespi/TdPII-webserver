@@ -10,6 +10,7 @@ table td {
 }
 
 
+
 @media screen and (max-width: 500px) {
   
   table thead {
@@ -24,6 +25,7 @@ table td {
   table tr {
     display: block;
     margin-bottom: .625em;
+    border-bottom: 3px solid rgb(107, 107, 107);
   }
   
   table td {

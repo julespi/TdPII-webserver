@@ -9170,3 +9170,43 @@
 [Sun Nov 17 19:12:56.411912 2019] [wsgi:error] [pid 12816:tid 1984] [client 192.168.1.102:51108] [(10,)]\r, referer: http://192.168.1.104/mostrar
 [Sun Nov 17 19:13:20.411911 2019] [wsgi:error] [pid 12816:tid 1984] [client ::1:60865] [(10,)]\r, referer: http://localhost/profile
 [Sun Nov 17 19:13:27.023002 2019] [wsgi:error] [pid 12816:tid 1968] [client 192.168.1.102:51117] [(10,)]\r, referer: http://192.168.1.104/mostrar
+[Sun Nov 17 19:13:47.759389 2019] [wsgi:error] [pid 8216:tid 1976] [client ::1:60868] [(10,)]\r, referer: http://localhost/profile
+[Sun Nov 17 19:13:50.829551 2019] [wsgi:error] [pid 8216:tid 1972] [client 192.168.1.102:51119] [(10,)]\r, referer: http://192.168.1.104/mostrar
+[Sun Nov 17 19:14:23.823074 2019] [wsgi:error] [pid 8216:tid 1972] [client ::1:60872] [(10,)]\r, referer: http://localhost/profile
+[Sun Nov 17 19:14:46.098775 2019] [wsgi:error] [pid 8216:tid 1972] [client ::1:60879] [(10,)]\r, referer: http://localhost/profile
+[Sun Nov 17 19:14:56.561376 2019] [wsgi:error] [pid 8216:tid 1972] [client ::1:60881] [(10,)]\r, referer: http://localhost/profile
+[Sun Nov 17 19:15:04.400111 2019] [wsgi:error] [pid 8216:tid 1988] [client ::1:60880] [(10,)]\r, referer: http://localhost/profile
+[Sun Nov 17 19:15:12.193082 2019] [wsgi:error] [pid 8216:tid 1972] [client ::1:60883] [(10,)]\r, referer: http://localhost/profile
+[Sun Nov 17 19:15:25.221765 2019] [wsgi:error] [pid 8216:tid 1960] [client 192.168.1.102:51126] [(10,)]\r, referer: http://192.168.1.104/mostrar
+[Sun Nov 17 19:15:34.889108 2019] [wsgi:error] [pid 8216:tid 1972] [client 192.168.1.102:51127] [(10,)]\r, referer: http://192.168.1.104/mostrar
+[Sun Nov 17 19:15:43.946818 2019] [wsgi:error] [pid 8216:tid 1960] [client 192.168.1.102:51131] [(10,)]\r, referer: http://192.168.1.104/mostrar
+[Sun Nov 17 19:16:37.822423 2019] [wsgi:error] [pid 8216:tid 1972] [client 192.168.1.102:51133] [(10,)]\r
+[Sun Nov 17 19:16:43.700997 2019] [wsgi:error] [pid 8216:tid 1960] [client 192.168.1.102:51134] [(10,)]\r
+[Sun Nov 17 19:19:38.851145 2019] [wsgi:error] [pid 8216:tid 1960] [client 192.168.1.103:52919] [(10,)]\r
+[Wed Nov 20 18:35:33.454256 2019] [wsgi:error] [pid 5656:tid 1984] [client ::1:55589] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:37:01.099102 2019] [wsgi:error] [pid 5656:tid 1984] [client 192.168.1.102:42237] [(10,)]\r, referer: http://192.168.1.104/profile
+[Wed Nov 20 18:38:07.549912 2019] [wsgi:error] [pid 5656:tid 1984] [client ::1:55613] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:38:11.418114 2019] [wsgi:error] [pid 5656:tid 1984] [client ::1:55613] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:38:23.109018 2019] [wsgi:error] [pid 11708:tid 1976] [client ::1:55617] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:38:23.735212 2019] [wsgi:error] [pid 11708:tid 1976] [client ::1:55617] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:40:26.070597 2019] [wsgi:error] [pid 11708:tid 1976] [client ::1:55685] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:40:50.938033 2019] [wsgi:error] [pid 11972:tid 1980] [client ::1:55706] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:43:47.837511 2019] [wsgi:error] [pid 10372:tid 1980] [client ::1:55873] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:44:13.999608 2019] [wsgi:error] [pid 5772:tid 1980] [client ::1:55897] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:44:35.024583 2019] [wsgi:error] [pid 12508:tid 1984] [client ::1:55917] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 18:46:31.759141 2019] [wsgi:error] [pid 12508:tid 1984] [client 192.168.1.102:42262] [(10,)]\r, referer: http://192.168.1.104/profile
+[Wed Nov 20 18:46:34.223155 2019] [wsgi:error] [pid 12508:tid 1984] [client 192.168.1.102:42262] [(10,)]\r, referer: http://192.168.1.104/profile
+[Wed Nov 20 18:46:45.473249 2019] [wsgi:error] [pid 12508:tid 1960] [client 192.168.1.102:42268] [(10,)]\r, referer: http://192.168.1.104/
+[Wed Nov 20 19:15:25.017568 2019] [wsgi:error] [pid 9232:tid 1980] [client 192.168.43.194:57763] [(10,)]\r, referer: http://192.168.43.130/profile
+[Wed Nov 20 19:15:28.950032 2019] [wsgi:error] [pid 9232:tid 1964] [client ::1:56465] [(10,)]\r, referer: http://localhost/profile
+[Wed Nov 20 19:15:37.850731 2019] [wsgi:error] [pid 9232:tid 1984] [client 192.168.43.194:57767] [(10,)]\r, referer: http://192.168.43.130/profile
+[Wed Nov 20 19:15:44.248480 2019] [wsgi:error] [pid 9232:tid 1964] [client 192.168.43.194:57768] [(10,)]\r
+[Wed Nov 20 19:15:58.106810 2019] [wsgi:error] [pid 9232:tid 1984] [client 192.168.43.194:57770] [(10,)]\r
+[Wed Nov 20 19:18:01.354416 2019] [wsgi:error] [pid 9232:tid 1980] [client 192.168.43.194:57777] [(10,)]\r
+[Wed Nov 20 19:18:26.155238 2019] [wsgi:error] [pid 9232:tid 1964] [client 192.168.43.194:57779] [(10,)]\r
+[Wed Nov 20 19:18:27.829585 2019] [wsgi:error] [pid 9232:tid 1964] [client 192.168.43.194:57779] [(10,)]\r
+[Wed Nov 20 19:18:29.282402 2019] [wsgi:error] [pid 9232:tid 1964] [client 192.168.43.194:57779] [(10,)]\r
+[Wed Nov 20 19:18:49.153358 2019] [wsgi:error] [pid 9232:tid 1980] [client 192.168.43.194:57782] [(10,)]\r
+[Wed Nov 20 19:19:20.527911 2019] [wsgi:error] [pid 9232:tid 1964] [client 192.168.43.194:57785] [(10,)]\r
+[Wed Nov 20 19:19:45.907463 2019] [wsgi:error] [pid 9232:tid 1980] [client 192.168.43.194:57788] [(10,)]\r
+[Wed Nov 20 19:20:14.246854 2019] [wsgi:error] [pid 9232:tid 1964] [client 192.168.43.194:57791] [(10,)]\r

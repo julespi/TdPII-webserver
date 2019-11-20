@@ -13,10 +13,8 @@
 
 <body>
     <section class="hero is-primary is-fullheight">
-
         <div class="hero-head">
             <nav class="navbar is-primary">
-                <!-- <div class="container"> -->
                 <div class="navbar-brand">
                     <a class="navbar-item" href="#" style="font-weight:bold;">
                         Taller de Proyecto II
@@ -27,7 +25,6 @@
                         <span></span>
                     </span>
                 </div>
-
                 <div id="navbarMenuHeroA" class="navbar-menu">
                     <div class="navbar-end">
                         <a href="{{ url_for('main.index') }}" class="navbar-item">
@@ -58,7 +55,6 @@
                         {% endif %}
                     </div>
                 </div>
-                <!-- </div> -->
             </nav>
             <script type="text/javascript">
                 (function () {
@@ -71,7 +67,6 @@
                 })();
             </script>
         </div>
-
         <div class="hero-body">
             <div class="container has-text-centered">
                 {% block content %}

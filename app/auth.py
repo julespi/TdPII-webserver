@@ -37,7 +37,7 @@ def login_post():
 @auth.route('/profile')
 @login_required
 def profile():
-    return render_template('profile.html', name=current_user.razonSocial)
+    return render_template('profile.html', name=current_user.razonSocial, nodos=Nodo.query.filter_by(cliente=current_user.id))
 
 
 @auth.route('/signup')
