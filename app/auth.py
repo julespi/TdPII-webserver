@@ -10,23 +10,25 @@ auth = Blueprint('auth', __name__)
 
 @auth.route('/login')
 def login():
+    """
+        Ruta para login
+    """
     return render_template('login.html')
 
 
 @auth.route('/login', methods=['POST'])
 def login_post():
+    """
+        esta es la ruta que es llamada por el submit del form del login
+    """
     email = request.form.get('email')
     password = request.form.get('password')
     remember = True if request.form.get('remember') else False
 
     usuario = Usuario.query.filter_by(email=email).first()
-
-    # check if user actually exists
-    # take the user supplied password, hash it, and compare it to the hashed
-    # password in database
+    # 
     if not usuario or not check_password_hash(usuario.contrasenia, password):
         flash('Please check your login details and try again.')
-        # if user doesn't exist or password is wrong, reload the page
         return redirect(url_for('auth.login'))
 
     # if the above check passes, then we know the user has the right
@@ -64,7 +66,7 @@ def signup_post():
     # version isn't saved.
     new_user = Usuario(email=email, razonSocial=razon_social,
                        contrasenia=generate_password_hash(password,
-                       method='sha256'))
+                                                          method='sha256'))
 
     # add the new user to the database
     db.session.add(new_user)
