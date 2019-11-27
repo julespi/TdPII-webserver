@@ -1,95 +1,97 @@
 {% extends "base.html" %}
 
 {% block head %}
-<link rel="stylesheet" href="../static/estilo.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
 {% endblock %}
 
 {% block content %}
 
 <body>
-   
-   <table class="table is-bordered is-striped is-narrow is-hoverable" id=t_datos>
+   <table class="table is-bordered is-striped is-narrow is-hoverable is-narrow" id=t_datos>
       <thead>
          <tr>
-            <th onclick="sortTable(0,'t_datos')" scope="col">Nodo </th>
-            <th onclick="sortTable(1,'t_datos')" scope="col">Timestamp </th>
-            <th onclick="sortTable(2,'t_datos')" scope="col">Volumen </th>
-            <th onclick="sortTable(3,'t_datos')" scope="col">Temperatura </th>
-            <th onclick="sortTable(4,'t_datos')" scope="col">Latitud </th>
-            <th onclick="sortTable(5,'t_datos')" scope="col">Longitud </th>
-            <th onclick="sortTable(6,'t_datos')" scope="col">Evento </th>
+            <th class="has-text-centered">Nodo </th>
+            <th class="has-text-centered">Timestamp </th>
+            <th class="has-text-centered">Volumen </th>
+            <th class="has-text-centered">Temperatura </th>
+            <th class="has-text-centered">Latitud </th>
+            <th class="has-text-centered">Longitud </th>
+            <th class="has-text-centered">Evento </th>
          </tr>
       </thead>
 
-      <tbody>
-         {% for dato in tabla %}
-         <tr>
-            <td data-label="Nodo">{{ dato.nodo }}</td>
-            <td data-label="Timestamp">{{ dato.time}}</td>
-            <td data-label="Volumen">{{ dato.vol}}</td>
-            <td data-label="Temperatura">{{ dato.temp}}</td>
-            <td data-label="Latitud">{{ dato.lat}}</td>
-            <td data-label="Longitud">{{ dato.lon}}</td>
-            <td data-label="Evento">{{ dato.eve}}</td>
-         </tr>
-         {% endfor %}
+      <tbody id="tabla_datos">
       </tbody>
    </table>
+   <!-- <table id=t_datos>
+         <thead>
+            <tr>
+               <th>Nodo </th>
+               <th>Timestamp </th>
+               <th>Volumen </th>
+               <th>Temperatura </th>
+               <th>Latitud </th>
+               <th>Longitud </th>
+               <th>Evento </th>
+            </tr>
+         </thead>
+   
+         <tbody id="tabla_datos">
+         </tbody>
+      </table> -->
 </body>
 <script>
-   function sortTable(n, id_tabla) {
-      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-      table = document.getElementById(id_tabla);
-      switching = true;
-      // Set the sorting direction to ascending:
-      dir = "asc";
-      /* Make a loop that will continue until
-      no switching has been done: */
-      while (switching) {
-         // Start by saying: no switching is done:
-         switching = false;
-         rows = table.rows;
-         /* Loop through all table rows (except the
-         first, which contains table headers): */
-         for (i = 1; i < (rows.length - 1); i++) {
-            // Start by saying there should be no switching:
-            shouldSwitch = false;
-            /* Get the two elements you want to compare,
-            one from current row and one from the next: */
-            x = rows[i].getElementsByTagName("TD")[n];
-            y = rows[i + 1].getElementsByTagName("TD")[n];
-            /* Check if the two rows should switch place,
-            based on the direction, asc or desc: */
-            if (dir == "asc") {
-               if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                  // If so, mark as a switch and break the loop:
-                  shouldSwitch = true;
-                  break;
-               }
-            } else if (dir == "desc") {
-               if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                  // If so, mark as a switch and break the loop:
-                  shouldSwitch = true;
-                  break;
-               }
+   $(document).ready(function () {
+      // Fetch the initial table
+      refreshTable();
+
+      // Fetch every 5 seconds
+      setInterval(refreshTable, 5000);
+   });
+
+   function refreshTable() {
+      $.ajax({
+         type: "POST",
+         url: "/mostrar",
+      }).done(function (data) {
+         console.log("ajax")
+         var datosTabla = '';
+         $.each(data, function (key, value) {
+            datosTabla += '<tr>';
+            datosTabla += '<td>' + value.nombre_nodo + '</td>';
+            datosTabla += '<td>' + value.timestamp + '</td>';
+            datosTabla += '<td>' + value.volumen + '</td>';
+            datosTabla += '<td>' + value.temperatura + '</td>';
+            datosTabla += '<td>' + value.latitud + '</td>';
+            datosTabla += '<td>' + value.longitud + '</td>';
+            datosTabla += '<td>' + value.evento + '</td>';
+            datosTabla += '</tr>';
+         });
+         $('#tabla_datos').html(datosTabla);
+         $('#t_datos').DataTable().destroy();
+         $('#t_datos').DataTable({
+            "language": {
+               "lengthMenu": "Mostrar _MENU_ registros por pagina",
+               "search": "Buscar:",
+               "paginate": {
+                  "first": "Primera",
+                  "last": "Ultima",
+                  "next": "Proxima",
+                  "previous": "Anterior"
+               },
+               "zeroRecords": "Nothing found - sorry",
+               "info": "Mostrando pagina _PAGE_ de _PAGES_",
+               "infoEmpty": "No records available",
+               "infoFiltered": "(filtered from _MAX_ total records)"
             }
-         }
-         if (shouldSwitch) {
-            /* If a switch has been marked, make the switch
-            and mark that a switch has been done: */
-            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-            switching = true;
-            // Each time a switch is done, increase this count by 1:
-            switchcount++;
-         } else {
-            /* If no switching has been done AND the direction is "asc",
-            set the direction to "desc" and run the while loop again. */
-            if (switchcount == 0 && dir == "asc") {
-               dir = "desc";
-               switching = true;
-            }
-         }
-      }
+         });
+      }).fail(function (jqXHR) {
+         console.log(jqXHR.statusText);
+      });
+
    }
 </script>
 {% endblock %}

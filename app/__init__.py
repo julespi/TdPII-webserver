@@ -1,10 +1,11 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
+from flask_marshmallow import Marshmallow
 
 # # inicializamos SQLAlchemy para usarlo en models
 db = SQLAlchemy()
-
+ma = Marshmallow()
 
 def create_app():
     app = Flask(__name__)

@@ -1,8 +1,9 @@
-from flask import Blueprint, render_template, redirect, url_for, request, flash
+from flask import Blueprint, render_template, redirect, url_for, request, flash, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, logout_user, login_required, current_user
-from .models import Usuario, Nodo, Datos
+from .models import Usuario, Nodo, Dato, datos_schema
 from . import db
+
 
 auth = Blueprint('auth', __name__)
 
@@ -37,7 +38,7 @@ def login_post():
 @auth.route('/profile')
 @login_required
 def profile():
-    return render_template('profile.html', name=current_user.razonSocial, nodos=Nodo.query.filter_by(cliente=current_user.id))
+    return render_template('profile.html', name=current_user.razonSocial, nodos=Nodo.query.filter_by(id_cliente=current_user.id))
 
 
 @auth.route('/signup')
@@ -79,9 +80,28 @@ def logout():
     return redirect(url_for('main.index'))
 
 
-@auth.route("/mostrar")
+@auth.route("/mostrar", methods=["GET"])
 @login_required
 def mostrar():
-    lista_de_nodos = Nodo.query.filter_by(cliente=current_user.id).with_entities(Nodo.nodo).all()
-    print(lista_de_nodos)
-    return render_template('show_all.html', tabla=Datos.query.filter(Datos.nodo.in_(lista_de_nodos)), nodos=Nodo.query.filter_by(cliente=current_user.id))
+    return render_template("show_all.html")
+
+
+@auth.route("/mostrar", methods=["POST"])
+@login_required
+def mostrar_post():
+    # lista_de_nodos = Nodo.query.filter_by(cliente=current_user.id).with_entities(Nodo.nodo).all()
+    datos = db.session.query(
+        Nodo.nombre,
+        Dato.timestamp,
+        Dato.volumen,
+        Dato.temperatura,
+        Dato.latitud,
+        Dato.longitud,
+        Dato.evento
+    ).filter(
+        Nodo.id_cliente == current_user.id,
+        Dato.id_nodo == Nodo.id
+    ).all()
+    payload = datos_schema.dump(datos)
+    # tabla=Datos.query.filter(Datos.nodo.in_(lista_de_nodos)), nodos=Nodo.query.filter_by(cliente=current_user.id)
+    return jsonify(payload)
