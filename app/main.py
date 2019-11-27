@@ -38,7 +38,6 @@ def init_db():
     admin.nodos.append(nodo_demo)
     db.session.add(admin)
     db.session.commit()
-    
     return ('base de datos creada')
 
 
@@ -52,7 +51,7 @@ def poster():
     # /poster?nodo=4&timestamp=2019-10-09%2018:59:00&temp=20.00&vol=0.00&lat=34.91&long=57.96&evento=0
     nod = request.args.get("nodo")
     time = request.args.get("timestamp")
-    vol = request.args.get("volu")
+    vol = request.args.get("vol")
     temp = request.args.get("temp")
     lat = request.args.get("lat")
     lon = request.args.get("long")

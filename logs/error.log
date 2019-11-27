@@ -12885,3 +12885,15 @@
 [Wed Nov 27 19:43:43.043277 2019] [wsgi:error] [pid 4816:tid 1996] [client ::1:49978]   File "D:/TdPII\\app\\auth.py", line 95, in mostrar_post\r, referer: http://localhost/mostrar
 [Wed Nov 27 19:43:43.043277 2019] [wsgi:error] [pid 4816:tid 1996] [client ::1:49978]     Dato.timestamp,\r, referer: http://localhost/mostrar
 [Wed Nov 27 19:43:43.043277 2019] [wsgi:error] [pid 4816:tid 1996] [client ::1:49978] AttributeError: type object 'Dato' has no attribute 'time'\r, referer: http://localhost/mostrar
+[Wed Nov 27 19:46:24.139725 2019] [wsgi:error] [pid 7368:tid 1984] [client 192.168.1.105:18900] factory_fm\r
+[Wed Nov 27 19:46:24.140720 2019] [wsgi:error] [pid 7368:tid 1984] [client 192.168.1.105:18900] 10\r
+[Wed Nov 27 19:46:24.140720 2019] [wsgi:error] [pid 7368:tid 1984] [client 192.168.1.105:18900] 2019-11-27 19:38:27\r
+[Wed Nov 27 19:46:24.140720 2019] [wsgi:error] [pid 7368:tid 1984] [client 192.168.1.105:18900] 20191119\r
+[Wed Nov 27 19:46:24.140720 2019] [wsgi:error] [pid 7368:tid 1984] [client 192.168.1.105:18900] 10\r
+[Wed Nov 27 19:46:24.140720 2019] [wsgi:error] [pid 7368:tid 1984] [client 192.168.1.105:18900] 0000-00-00 00:00:00\r
+[Wed Nov 27 19:48:27.122368 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] 20191119\r
+[Wed Nov 27 19:48:27.122368 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] 10\r
+[Wed Nov 27 19:48:27.122368 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] None\r
+[Wed Nov 27 19:48:27.123366 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] 20191119\r
+[Wed Nov 27 19:48:27.123366 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] 10\r
+[Wed Nov 27 19:48:27.123366 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] 0000-00-00 00:00:00\r
