@@ -104,6 +104,7 @@ def mostrar_post():
         Nodo.id_cliente == current_user.id,
         Dato.id_nodo == Nodo.id
     ).all()
+
     payload = datos_schema.dump(datos)
     # tabla=Datos.query.filter(Datos.nodo.in_(lista_de_nodos)), nodos=Nodo.query.filter_by(cliente=current_user.id)
     return jsonify(payload)

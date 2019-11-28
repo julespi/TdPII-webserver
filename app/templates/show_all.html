@@ -47,11 +47,9 @@
    $(document).ready(function () {
       // Fetch the initial table
       refreshTable();
-
       // Fetch every 5 seconds
-      setInterval(refreshTable, 5000);
+      setInterval(refreshTable, 10000);
    });
-
    function refreshTable() {
       $.ajax({
          type: "POST",
@@ -73,6 +71,7 @@
          $('#tabla_datos').html(datosTabla);
          $('#t_datos').DataTable().destroy();
          $('#t_datos').DataTable({
+            responsive: true,
             "language": {
                "lengthMenu": "Mostrar _MENU_ registros por pagina",
                "search": "Buscar:",
@@ -91,7 +90,6 @@
       }).fail(function (jqXHR) {
          console.log(jqXHR.statusText);
       });
-
    }
 </script>
 {% endblock %}
