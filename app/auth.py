@@ -26,7 +26,7 @@ def login_post():
     remember = True if request.form.get('remember') else False
 
     usuario = Usuario.query.filter_by(email=email).first()
-    # 
+    #
     if not usuario or not check_password_hash(usuario.contrasenia, password):
         flash('Please check your login details and try again.')
         return redirect(url_for('auth.login'))
@@ -40,7 +40,12 @@ def login_post():
 @auth.route('/profile')
 @login_required
 def profile():
-    return render_template('profile.html', name=current_user.razonSocial, nodos=Nodo.query.filter_by(id_cliente=current_user.id))
+    return render_template('profile.html',
+                           nombre=current_user.razonSocial,
+                           email=current_user.email,
+                           nodos=Nodo.query.filter_by(
+                               id_cliente=current_user.id)
+                           )
 
 
 @auth.route('/signup')

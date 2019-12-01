@@ -12897,3 +12897,51 @@
 [Wed Nov 27 19:48:27.123366 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] 20191119\r
 [Wed Nov 27 19:48:27.123366 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] 10\r
 [Wed Nov 27 19:48:27.123366 2019] [wsgi:error] [pid 14136:tid 1960] [client 192.168.1.105:4727] 0000-00-00 00:00:00\r
+[Sun Dec 01 18:43:35.658464 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644] mod_wsgi (pid=9876): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Sun Dec 01 18:43:35.660451 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644] mod_wsgi (pid=9876): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Sun Dec 01 18:43:35.669449 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644] Traceback (most recent call last):\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     from entrypoint import app as application\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     app = create_app()\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:/TdPII\\app\\__init__.py", line 33, in create_app\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     app.register_blueprint(main_blueprint)\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 98, in wrapper_func\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     return f(self, *args, **kwargs)\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1167, in register_blueprint\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     blueprint.register(self, options, first_registration)\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\blueprints.py", line 256, in register\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     deferred(state)\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\blueprints.py", line 294, in <lambda>\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     self.record(lambda s: s.add_url_rule(rule, endpoint, view_func, **options))\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\blueprints.py", line 86, in add_url_rule\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     **options\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 98, in wrapper_func\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     return f(self, *args, **kwargs)\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1283, in add_url_rule\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644]     "existing endpoint function: %s" % endpoint\r
+[Sun Dec 01 18:43:35.670448 2019] [wsgi:error] [pid 9876:tid 1984] [client ::1:58644] AssertionError: View function mapping is overwriting an existing endpoint function: main.init_db\r
+[Sun Dec 01 18:43:43.517804 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647] mod_wsgi (pid=15604): Failed to exec Python script file 'D:/TdPII/web.wsgi'.
+[Sun Dec 01 18:43:43.518803 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647] mod_wsgi (pid=15604): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647] Traceback (most recent call last):\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:/TdPII/web.wsgi", line 4, in <module>\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     from entrypoint import app as application\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:/TdPII\\entrypoint.py", line 3, in <module>\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     app = create_app()\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:/TdPII\\app\\__init__.py", line 33, in create_app\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     app.register_blueprint(main_blueprint)\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 98, in wrapper_func\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     return f(self, *args, **kwargs)\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1167, in register_blueprint\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     blueprint.register(self, options, first_registration)\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\blueprints.py", line 256, in register\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     deferred(state)\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\blueprints.py", line 294, in <lambda>\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     self.record(lambda s: s.add_url_rule(rule, endpoint, view_func, **options))\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\blueprints.py", line 86, in add_url_rule\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     **options\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 98, in wrapper_func\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     return f(self, *args, **kwargs)\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1283, in add_url_rule\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     "existing endpoint function: %s" % endpoint\r
+[Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647] AssertionError: View function mapping is overwriting an existing endpoint function: main.init_db\r

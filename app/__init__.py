@@ -7,9 +7,10 @@ from flask_marshmallow import Marshmallow
 db = SQLAlchemy()
 ma = Marshmallow()
 
+
 def create_app():
     app = Flask(__name__)
-    app.config.from_object('config.DevJulian')
+    app.config.from_object('config.Development')
     db.init_app(app)
 
     login_manager = LoginManager()
