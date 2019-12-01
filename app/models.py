@@ -76,6 +76,7 @@ class Usuario(UserMixin, db.Model):
     # Modelo de la tabla "nodo".
 
     __tablename__ = 'usuario'
+    # Identificador.
     id = db.Column("id", db.INTEGER, primary_key=True)
     email = db.Column("email", String(50), unique=True)
     contrasenia = db.Column("contrasenia", String(128))
