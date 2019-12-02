@@ -3,12 +3,13 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_marshmallow import Marshmallow
 
-# # inicializamos SQLAlchemy para usarlo en models
 db = SQLAlchemy()
 ma = Marshmallow()
 
 
 def create_app():
+    # Funcion que se encarga de crear la instancia app
+
     app = Flask(__name__)
     app.config.from_object('config.Development')
     db.init_app(app)
@@ -21,8 +22,6 @@ def create_app():
 
     @login_manager.user_loader
     def load_user(user_id):
-        # since the user_id is just the primary key of our user table,
-        # use it in the query for the user
         return Usuario.query.get(int(user_id))
 
     # blueprint para las rutas con autenticacion

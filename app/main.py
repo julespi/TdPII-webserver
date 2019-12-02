@@ -1,6 +1,14 @@
-from flask import Blueprint, render_template, request
-from .models import Dato, Nodo, Usuario
-from datetime import datetime
+from flask import (
+    Blueprint,
+    render_template,
+    request
+)
+from .models import (
+    Dato,
+    Nodo,
+    Usuario
+)
+from datetime import datetime, timedelta
 from werkzeug.security import generate_password_hash
 from . import db
 
@@ -138,6 +146,26 @@ def poster():
     # Obtengo los datos de los argumentos de la peticion GET.
     nod = request.args.get("nodo")
     time = request.args.get("timestamp")
+    date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)
+    """timestamp = time[0].split("-")
+    timestamp += time[1].split(":")
+    segundo = int(timestamp[5])
+    print(timestamp[0])
+    print(timestamp[1])
+    print(timestamp[2])
+    print(timestamp[3])
+    print(timestamp[4])
+    print(segundo)
+    print(type(segundo))"""
+    """
+    date = datetime(
+        year=timestamp[0],
+        month=timestamp[2],
+        day=timestamp[1],
+        hour=timestamp[3],
+        minute=timestamp[4],
+        second=segundo
+    )"""
     vol = request.args.get("vol")
     temp = request.args.get("temp")
     lat = request.args.get("lat")
@@ -148,7 +176,7 @@ def poster():
     # Creo un objeto "dato" a partir de los argumentos.
     nuevo_dato = Dato(
         id_nodo=nodo.id,
-        timestamp=time,
+        timestamp=date,
         volumen=vol,
         temperatura=temp,
         latitud=lat,
@@ -163,29 +191,31 @@ def poster():
 
 @main.route('/postjson', methods=['POST'])
 def postJsonHandler():
+    # Funcion de prueba para el manejo de datos con formato JSON
+
     content = request.get_json()
     var1 = content.get("clave")
     var2 = content.get("values")
     var3 = content.get("timestamps")
-    print (var1)
+    print(var1)
     return 'JSON posted'
 
 
 @main.route('/version', methods=["GET"])
 def version():
+    # Funcion que se encarga de dejar registro del firmware del nodo. El nodo
+    # realizara un request con la informacion de su firmware cada vez que
+    # se inicie. El formato del request sera como el siguiente:
     # /version?nodo=10&timestamp=0000-00-00%2000:00:00&firmware=20190611"
+
+    # Obtengo los datos pasados por el request
     nodo_local = request.args.get("nodo")
     firm = request.args.get("firmware")
     time = request.args.get("timestamp")
+    # Obtengo el nodo que realizo dicho request
     nodo_act = db.session.query(Nodo).filter_by(nodo=nodo_local).first()
-    print(nodo_act.firmware)
-    print(nodo_act.nodo)
-    print(nodo_act.timestamp_fm)
+    # Modifico los datos e inserto en la bd
     nodo_act.firmware = firm
     nodo_act.timestamp_fm = time
-    # db.session.add(nodo_act)
-    print(nodo_act.firmware)
-    print(nodo_act.nodo)
-    print(nodo_act.timestamp_fm)
     db.session.commit()
-    return "holamanola"
+    return "Firmware actualizado"

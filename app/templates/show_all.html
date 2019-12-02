@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 
 {% block head %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
 
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
-
+<link rel="stylesheet" type="text/css"
+   href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+<script type="text/javascript" charset="utf8"
+   src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -26,36 +29,19 @@
       <tbody id="tabla_datos">
       </tbody>
    </table>
-   <!-- <table id=t_datos>
-         <thead>
-            <tr>
-               <th>Nodo </th>
-               <th>Timestamp </th>
-               <th>Volumen </th>
-               <th>Temperatura </th>
-               <th>Latitud </th>
-               <th>Longitud </th>
-               <th>Evento </th>
-            </tr>
-         </thead>
-   
-         <tbody id="tabla_datos">
-         </tbody>
-      </table> -->
 </body>
 <script>
    $(document).ready(function () {
-      // Fetch the initial table
-      refreshTable();
-      // Fetch every 5 seconds
-      setInterval(refreshTable, 10000);
+      var tabla;
+      refreshTable(true, tabla);
+      setInterval(function () { refreshTable(false, tabla); }, 3000);
+      //setInterval(refreshTable, 1000);
    });
-   function refreshTable() {
+   function refreshTable(primeraVez) {
       $.ajax({
          type: "POST",
          url: "/mostrar",
       }).done(function (data) {
-         console.log("ajax")
          var datosTabla = '';
          $.each(data, function (key, value) {
             datosTabla += '<tr>';
@@ -69,24 +55,33 @@
             datosTabla += '</tr>';
          });
          $('#tabla_datos').html(datosTabla);
-         $('#t_datos').DataTable().destroy();
-         $('#t_datos').DataTable({
-            responsive: true,
-            "language": {
-               "lengthMenu": "Mostrar _MENU_ registros por pagina",
-               "search": "Buscar:",
-               "paginate": {
-                  "first": "Primera",
-                  "last": "Ultima",
-                  "next": "Proxima",
-                  "previous": "Anterior"
-               },
-               "zeroRecords": "Nothing found - sorry",
-               "info": "Mostrando pagina _PAGE_ de _PAGES_",
-               "infoEmpty": "No records available",
-               "infoFiltered": "(filtered from _MAX_ total records)"
-            }
-         });
+         if (primeraVez) {
+            console.log("primera vez")
+            tabla = $('#t_datos').DataTable({
+               "responsive": "true",
+               "language": {
+                  "lengthMenu": "Mostrar _MENU_ registros por pagina",
+                  "search": "Buscar:",
+                  "paginate": {
+                     "first": "Primera",
+                     "last": "Ultima",
+                     "next": "Proxima",
+                     "previous": "Anterior"
+                  },
+                  "zeroRecords": "Nothing found - sorry",
+                  "info": "Mostrando pagina _PAGE_ de _PAGES_",
+                  "infoEmpty": "No records available",
+                  "infoFiltered": "(filtered from _MAX_ total records)"
+               }
+            });
+         } else {
+            console.log("otra")
+            //tabla.draw(false)
+            tabla.draw();
+         }
+
+
+
       }).fail(function (jqXHR) {
          console.log(jqXHR.statusText);
       });

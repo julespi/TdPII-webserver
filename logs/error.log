@@ -12945,3 +12945,374 @@
 [Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1283, in add_url_rule\r
 [Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647]     "existing endpoint function: %s" % endpoint\r
 [Sun Dec 01 18:43:43.520802 2019] [wsgi:error] [pid 15604:tid 1984] [client ::1:58647] AssertionError: View function mapping is overwriting an existing endpoint function: main.init_db\r
+[Mon Dec 02 19:58:24.178084 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] 2019\r
+[Mon Dec 02 19:58:24.178084 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] 12\r
+[Mon Dec 02 19:58:24.178084 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] 02\r
+[Mon Dec 02 19:58:24.178084 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] 22\r
+[Mon Dec 02 19:58:24.178084 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] 57\r
+[Mon Dec 02 19:58:24.178084 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] 05\r
+[Mon Dec 02 19:58:24.191077 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] mod_wsgi (pid=8920): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] Traceback (most recent call last):\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1249, in _execute_context\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     cursor, statement, parameters, context\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\default.py", line 580, in do_execute\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     cursor.execute(statement, parameters)\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 209, in execute\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     res = self._query(query)\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 315, in _query\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     db.query(q)\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\connections.py", line 226, in query\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     _mysql.connection.query(self, query)\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] MySQLdb._exceptions.OperationalError: (1241, 'Operand should contain 1 column(s)')\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] \r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] The above exception was the direct cause of the following exception:\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] \r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] Traceback (most recent call last):\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     response = self.handle_exception(e)\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 19:58:24.306004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     raise value\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     response = self.full_dispatch_request()\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     raise value\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     rv = self.dispatch_request()\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:/TdPII\\app\\main.py", line 176, in poster\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     db.session.commit()\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\scoping.py", line 162, in do\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     return getattr(self.registry(), name)(*args, **kwargs)\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 1027, in commit\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     self.transaction.commit()\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 494, in commit\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     self._prepare_impl()\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 473, in _prepare_impl\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     self.session.flush()\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2470, in flush\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     self._flush(objects)\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2608, in _flush\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     transaction.rollback(_capture_exception=True)\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\langhelpers.py", line 68, in __exit__\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     compat.reraise(exc_type, exc_value, exc_tb)\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 153, in reraise\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     raise value\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\session.py", line 2568, in _flush\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     flush_context.execute()\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py", line 422, in execute\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     rec.execute(self)\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\unitofwork.py", line 589, in execute\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     uow,\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\persistence.py", line 245, in save_obj\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     insert,\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\orm\\persistence.py", line 1137, in _emit_insert_statements\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     statement, params\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 988, in execute\r
+[Mon Dec 02 19:58:24.307004 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     return meth(self, multiparams, params)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\sql\\elements.py", line 287, in _execute_on_connection\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     return connection._execute_clauseelement(self, multiparams, params)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1107, in _execute_clauseelement\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     distilled_params,\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1253, in _execute_context\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     e, statement, parameters, cursor, context\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1473, in _handle_dbapi_exception\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     util.raise_from_cause(sqlalchemy_exception, exc_info)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 398, in raise_from_cause\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     reraise(type(exception), exception, tb=exc_tb, cause=cause)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\util\\compat.py", line 152, in reraise\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     raise value.with_traceback(tb)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\base.py", line 1249, in _execute_context\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     cursor, statement, parameters, context\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\sqlalchemy\\engine\\default.py", line 580, in do_execute\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     cursor.execute(statement, parameters)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 209, in execute\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     res = self._query(query)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\cursors.py", line 315, in _query\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     db.query(q)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]   File "D:\\TdPII\\env1\\lib\\site-packages\\MySQLdb\\connections.py", line 226, in query\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144]     _mysql.connection.query(self, query)\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] sqlalchemy.exc.OperationalError: (MySQLdb._exceptions.OperationalError) (1241, 'Operand should contain 1 column(s)')\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] [SQL: INSERT INTO dato (id_nodo, timestamp, volumen, temperatura, latitud, longitud, evento) VALUES (%s, %s, %s, %s, %s, %s, %s)]\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] [parameters: (1, ['2019-12-02', '22:57:05'], '0.00', '23.56', '-34.91', '-57.96', '0')]\r
+[Mon Dec 02 19:58:24.308003 2019] [wsgi:error] [pid 8920:tid 1988] [client ::1:64144] (Background on this error at: http://sqlalche.me/e/e3q8)\r
+[Mon Dec 02 20:00:39.967123 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] 2019\r
+[Mon Dec 02 20:00:39.968125 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] 12\r
+[Mon Dec 02 20:00:39.968125 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] 02\r
+[Mon Dec 02 20:00:39.968125 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] 22\r
+[Mon Dec 02 20:00:39.968125 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] 57\r
+[Mon Dec 02 20:00:39.968125 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] 05\r
+[Mon Dec 02 20:00:39.968125 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] mod_wsgi (pid=14828): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] Traceback (most recent call last):\r
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:00:39.971120 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     raise value\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     raise value\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]   File "D:/TdPII\\app\\main.py", line 163, in poster\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291]     timestamp[5]\r
+[Mon Dec 02 20:00:39.972118 2019] [wsgi:error] [pid 14828:tid 1976] [client ::1:64291] TypeError: an integer is required (got type str)\r
+[Mon Dec 02 20:01:54.863793 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] 2019\r
+[Mon Dec 02 20:01:54.863793 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] 12\r
+[Mon Dec 02 20:01:54.863793 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] 02\r
+[Mon Dec 02 20:01:54.863793 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] 22\r
+[Mon Dec 02 20:01:54.863793 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] 57\r
+[Mon Dec 02 20:01:54.863793 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] 05\r
+[Mon Dec 02 20:01:54.864795 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] mod_wsgi (pid=11484): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] Traceback (most recent call last):\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     raise value\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:01:54.867789 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     raise value\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]   File "D:/TdPII\\app\\main.py", line 163, in poster\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367]     int(timestamp[5])\r
+[Mon Dec 02 20:01:54.868788 2019] [wsgi:error] [pid 11484:tid 1984] [client ::1:64367] TypeError: an integer is required (got type str)\r
+[Mon Dec 02 20:01:58.409039 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] 2019\r
+[Mon Dec 02 20:01:58.409039 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] 12\r
+[Mon Dec 02 20:01:58.409039 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] 02\r
+[Mon Dec 02 20:01:58.409039 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] 22\r
+[Mon Dec 02 20:01:58.409039 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] 57\r
+[Mon Dec 02 20:01:58.409039 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] 05\r
+[Mon Dec 02 20:01:58.409039 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] mod_wsgi (pid=11484): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] Traceback (most recent call last):\r
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:01:58.410037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     raise value\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     raise value\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]   File "D:/TdPII\\app\\main.py", line 163, in poster\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371]     int(timestamp[5])\r
+[Mon Dec 02 20:01:58.411037 2019] [wsgi:error] [pid 11484:tid 1980] [client ::1:64371] TypeError: an integer is required (got type str)\r
+[Mon Dec 02 20:04:54.831528 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] 2019\r
+[Mon Dec 02 20:04:54.834527 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] 12\r
+[Mon Dec 02 20:04:54.834527 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] 02\r
+[Mon Dec 02 20:04:54.834527 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] 22\r
+[Mon Dec 02 20:04:54.834527 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] 57\r
+[Mon Dec 02 20:04:54.834527 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] 5\r
+[Mon Dec 02 20:04:54.834527 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] mod_wsgi (pid=6516): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] Traceback (most recent call last):\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     raise value\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:04:54.837523 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:04:54.838524 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:04:54.838524 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:04:54.838524 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:04:54.838524 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:04:54.838524 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:04:54.838524 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     raise value\r
+[Mon Dec 02 20:04:54.845522 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:04:54.845522 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:04:54.845522 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:04:54.845522 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:04:54.845522 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]   File "D:/TdPII\\app\\main.py", line 163, in poster\r
+[Mon Dec 02 20:04:54.845522 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529]     int(timestamp[5])\r
+[Mon Dec 02 20:04:54.845522 2019] [wsgi:error] [pid 6516:tid 1980] [client 127.0.0.1:64529] TypeError: an integer is required (got type str)\r
+[Mon Dec 02 20:07:33.002679 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] 2019\r
+[Mon Dec 02 20:07:33.002679 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] 12\r
+[Mon Dec 02 20:07:33.002679 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] 02\r
+[Mon Dec 02 20:07:33.002679 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] 22\r
+[Mon Dec 02 20:07:33.002679 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] 57\r
+[Mon Dec 02 20:07:33.002679 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] 5\r
+[Mon Dec 02 20:07:33.002679 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] mod_wsgi (pid=6104): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:07:33.005677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] Traceback (most recent call last):\r
+[Mon Dec 02 20:07:33.005677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     raise value\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     raise value\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]   File "D:/TdPII\\app\\main.py", line 163, in poster\r
+[Mon Dec 02 20:07:33.006677 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674]     second=timestamp[5]\r
+[Mon Dec 02 20:07:33.007675 2019] [wsgi:error] [pid 6104:tid 1996] [client 127.0.0.1:64674] TypeError: an integer is required (got type str)\r
+[Mon Dec 02 20:14:20.775852 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] 2019\r
+[Mon Dec 02 20:14:20.775852 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] 12\r
+[Mon Dec 02 20:14:20.775852 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] 02\r
+[Mon Dec 02 20:14:20.775852 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] 22\r
+[Mon Dec 02 20:14:20.775852 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] 57\r
+[Mon Dec 02 20:14:20.775852 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] 5\r
+[Mon Dec 02 20:14:20.775852 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] mod_wsgi (pid=16192): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:14:20.778850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] Traceback (most recent call last):\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     raise value\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     raise value\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]   File "D:/TdPII\\app\\main.py", line 165, in poster\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056]     second=segundo\r
+[Mon Dec 02 20:14:20.779850 2019] [wsgi:error] [pid 16192:tid 1980] [client ::1:65056] TypeError: an integer is required (got type str)\r
+[Mon Dec 02 20:14:54.321843 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] 2019\r
+[Mon Dec 02 20:14:54.324841 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] 12\r
+[Mon Dec 02 20:14:54.324841 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] 02\r
+[Mon Dec 02 20:14:54.324841 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] 22\r
+[Mon Dec 02 20:14:54.324841 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] 57\r
+[Mon Dec 02 20:14:54.324841 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] 5\r
+[Mon Dec 02 20:14:54.324841 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] <class 'int'>\r
+[Mon Dec 02 20:14:54.324841 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] mod_wsgi (pid=13736): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:14:54.326840 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] Traceback (most recent call last):\r
+[Mon Dec 02 20:14:54.326840 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:14:54.326840 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     raise value\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:14:54.327839 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     raise value\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]   File "D:/TdPII\\app\\main.py", line 166, in poster\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098]     second=segundo\r
+[Mon Dec 02 20:14:54.334834 2019] [wsgi:error] [pid 13736:tid 1980] [client 127.0.0.1:65098] TypeError: an integer is required (got type str)\r
+[Mon Dec 02 20:23:29.244505 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177] mod_wsgi (pid=15424): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:23:29.256432 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177] Traceback (most recent call last):\r
+[Mon Dec 02 20:23:29.256432 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     raise value\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     raise value\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     date = datetime.strptime(time, '%Y%m%d %H:%M:%S')\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 577, in _strptime_datetime\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     tt, fraction, gmtoff_fraction = _strptime(data_string, format)\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 359, in _strptime\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177]     (data_string, format))\r
+[Mon Dec 02 20:23:29.257434 2019] [wsgi:error] [pid 15424:tid 1980] [client 127.0.0.1:49177] ValueError: time data '2019-12-02 22:57:05' does not match format '%Y%m%d %H:%M:%S'\r
+[Mon Dec 02 20:32:29.486985 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681] mod_wsgi (pid=9996): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681] Traceback (most recent call last):\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     return self.wsgi_app(environ, start_response)\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     response = self.handle_exception(e)\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     raise value\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     response = self.full_dispatch_request()\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     rv = self.handle_user_exception(e)\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     reraise(exc_type, exc_value, tb)\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     raise value\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     rv = self.dispatch_request()\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
+[Mon Dec 02 20:32:29.490979 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)\r
+[Mon Dec 02 20:32:29.490979 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681] NameError: name 'timedelta' is not defined\r

@@ -1,5 +1,13 @@
 from . import db, ma
-from sqlalchemy import Table, Column, Float, Integer, String, ForeignKey, func
+from sqlalchemy import (
+    Table,
+    Column,
+    Float,
+    Integer,
+    String,
+    ForeignKey,
+    func
+)
 from flask_login import UserMixin
 from datetime import datetime
 from marshmallow import fields
