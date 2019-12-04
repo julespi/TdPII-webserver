@@ -146,26 +146,8 @@ def poster():
     # Obtengo los datos de los argumentos de la peticion GET.
     nod = request.args.get("nodo")
     time = request.args.get("timestamp")
+    print(time)
     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)
-    """timestamp = time[0].split("-")
-    timestamp += time[1].split(":")
-    segundo = int(timestamp[5])
-    print(timestamp[0])
-    print(timestamp[1])
-    print(timestamp[2])
-    print(timestamp[3])
-    print(timestamp[4])
-    print(segundo)
-    print(type(segundo))"""
-    """
-    date = datetime(
-        year=timestamp[0],
-        month=timestamp[2],
-        day=timestamp[1],
-        hour=timestamp[3],
-        minute=timestamp[4],
-        second=segundo
-    )"""
     vol = request.args.get("vol")
     temp = request.args.get("temp")
     lat = request.args.get("lat")

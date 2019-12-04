@@ -13316,3 +13316,192 @@
 [Mon Dec 02 20:32:29.489981 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
 [Mon Dec 02 20:32:29.490979 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681]     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)\r
 [Mon Dec 02 20:32:29.490979 2019] [wsgi:error] [pid 9996:tid 1984] [client ::1:49681] NameError: name 'timedelta' is not defined\r
+[Tue Dec 03 18:29:34.179858 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332] mod_wsgi (pid=14868): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332] Traceback (most recent call last):\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     return self.wsgi_app(environ, start_response)\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     response = self.handle_exception(e)\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     raise value\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     response = self.full_dispatch_request()\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     rv = self.handle_user_exception(e)\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     raise value\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     rv = self.dispatch_request()\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Tue Dec 03 18:29:34.241091 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Tue Dec 03 18:29:34.242090 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
+[Tue Dec 03 18:29:34.242090 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)\r
+[Tue Dec 03 18:29:34.242090 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 577, in _strptime_datetime\r
+[Tue Dec 03 18:29:34.242090 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     tt, fraction, gmtoff_fraction = _strptime(data_string, format)\r
+[Tue Dec 03 18:29:34.242090 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 359, in _strptime\r
+[Tue Dec 03 18:29:34.242090 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332]     (data_string, format))\r
+[Tue Dec 03 18:29:34.242090 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:19332] ValueError: time data '0000-00-00 00:00:00' does not match format '%Y-%m-%d %H:%M:%S'\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593] mod_wsgi (pid=14868): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593] Traceback (most recent call last):\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     return self.wsgi_app(environ, start_response)\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     response = self.handle_exception(e)\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:29:39.630622 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     raise value\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     response = self.full_dispatch_request()\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     rv = self.handle_user_exception(e)\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     raise value\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     rv = self.dispatch_request()\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 577, in _strptime_datetime\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     tt, fraction, gmtoff_fraction = _strptime(data_string, format)\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 359, in _strptime\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593]     (data_string, format))\r
+[Tue Dec 03 18:29:39.631620 2019] [wsgi:error] [pid 14868:tid 1952] [client 192.168.1.105:39593] ValueError: time data '0000-00-00 00:00:00' does not match format '%Y-%m-%d %H:%M:%S'\r
+[Tue Dec 03 18:29:46.246922 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098] mod_wsgi (pid=14868): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098] Traceback (most recent call last):\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     return self.wsgi_app(environ, start_response)\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     response = self.handle_exception(e)\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     raise value\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     response = self.full_dispatch_request()\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     rv = self.handle_user_exception(e)\r
+[Tue Dec 03 18:29:46.247918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     raise value\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     rv = self.dispatch_request()\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 577, in _strptime_datetime\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     tt, fraction, gmtoff_fraction = _strptime(data_string, format)\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 359, in _strptime\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098]     (data_string, format))\r
+[Tue Dec 03 18:29:46.248918 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:1098] ValueError: time data '0000-00-00 00:00:00' does not match format '%Y-%m-%d %H:%M:%S'\r
+[Tue Dec 03 18:32:51.600746 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712] mod_wsgi (pid=14868): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712] Traceback (most recent call last):\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     return self.wsgi_app(environ, start_response)\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     response = self.handle_exception(e)\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     raise value\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     response = self.full_dispatch_request()\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     rv = self.handle_user_exception(e)\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     raise value\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     rv = self.dispatch_request()\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 577, in _strptime_datetime\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     tt, fraction, gmtoff_fraction = _strptime(data_string, format)\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 359, in _strptime\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712]     (data_string, format))\r
+[Tue Dec 03 18:32:51.601743 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:26712] ValueError: time data '0000-00-00 00:00:00' does not match format '%Y-%m-%d %H:%M:%S'\r
+[Tue Dec 03 18:32:58.216587 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415] mod_wsgi (pid=14868): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Tue Dec 03 18:32:58.217588 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415] Traceback (most recent call last):\r
+[Tue Dec 03 18:32:58.217588 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Tue Dec 03 18:32:58.217588 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     return self.wsgi_app(environ, start_response)\r
+[Tue Dec 03 18:32:58.218585 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Tue Dec 03 18:32:58.218585 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     response = self.handle_exception(e)\r
+[Tue Dec 03 18:32:58.218585 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Tue Dec 03 18:32:58.218585 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:32:58.218585 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:32:58.218585 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     raise value\r
+[Tue Dec 03 18:32:58.218585 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Tue Dec 03 18:32:58.218585 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     response = self.full_dispatch_request()\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     rv = self.handle_user_exception(e)\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     raise value\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     rv = self.dispatch_request()\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
+[Tue Dec 03 18:32:58.219584 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)\r
+[Tue Dec 03 18:32:58.220583 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 577, in _strptime_datetime\r
+[Tue Dec 03 18:32:58.220583 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     tt, fraction, gmtoff_fraction = _strptime(data_string, format)\r
+[Tue Dec 03 18:32:58.220583 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 359, in _strptime\r
+[Tue Dec 03 18:32:58.220583 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415]     (data_string, format))\r
+[Tue Dec 03 18:32:58.220583 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:8415] ValueError: time data '0000-00-00 00:00:00' does not match format '%Y-%m-%d %H:%M:%S'\r
+[Tue Dec 03 18:33:04.836952 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487] mod_wsgi (pid=14868): Exception occurred processing WSGI script 'D:/TdPII/web.wsgi'.
+[Tue Dec 03 18:33:04.837945 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487] Traceback (most recent call last):\r
+[Tue Dec 03 18:33:04.837945 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2463, in __call__\r
+[Tue Dec 03 18:33:04.837945 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     return self.wsgi_app(environ, start_response)\r
+[Tue Dec 03 18:33:04.837945 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2449, in wsgi_app\r
+[Tue Dec 03 18:33:04.837945 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     response = self.handle_exception(e)\r
+[Tue Dec 03 18:33:04.837945 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1866, in handle_exception\r
+[Tue Dec 03 18:33:04.837945 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:33:04.837945 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     raise value\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 2446, in wsgi_app\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     response = self.full_dispatch_request()\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1951, in full_dispatch_request\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     rv = self.handle_user_exception(e)\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1820, in handle_user_exception\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     reraise(exc_type, exc_value, tb)\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\_compat.py", line 39, in reraise\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     raise value\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1949, in full_dispatch_request\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     rv = self.dispatch_request()\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:\\TdPII\\env1\\lib\\site-packages\\flask\\app.py", line 1935, in dispatch_request\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     return self.view_functions[rule.endpoint](**req.view_args)\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "D:/TdPII\\app\\main.py", line 149, in poster\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     date = datetime.strptime(time, '%Y-%m-%d %H:%M:%S') - timedelta(hours=3)\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 577, in _strptime_datetime\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     tt, fraction, gmtoff_fraction = _strptime(data_string, format)\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]   File "c:\\users\\julian\\appdata\\local\\programs\\python\\python37\\Lib\\_strptime.py", line 359, in _strptime\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487]     (data_string, format))\r
+[Tue Dec 03 18:33:04.838950 2019] [wsgi:error] [pid 14868:tid 1960] [client 192.168.1.105:19487] ValueError: time data '0000-00-00 00:00:00' does not match format '%Y-%m-%d %H:%M:%S'\r
+[Tue Dec 03 18:51:14.508383 2019] [wsgi:error] [pid 15984:tid 1980] [client 127.0.0.1:53571] 2019-12-03 21:37:13\r
+[Tue Dec 03 18:52:36.183948 2019] [wsgi:error] [pid 15984:tid 1972] [client ::1:53626] 2019-12-03 21:37:13\r
+[Tue Dec 03 18:57:49.899401 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:23118] 2019-12-03 21:57:49\r
+[Tue Dec 03 18:58:15.112967 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:32763] 2019-12-03 21:58:14\r
+[Tue Dec 03 18:58:40.331623 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:16407] 2019-12-03 21:58:39\r
+[Tue Dec 03 18:59:05.565045 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:30071] 2019-12-03 21:59:04\r
+[Tue Dec 03 18:59:30.809813 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:23671] 2019-12-03 21:59:29\r
+[Tue Dec 03 18:59:56.039354 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:9239] 2019-12-03 21:59:54\r
+[Tue Dec 03 19:00:21.272339 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:39803] 2019-12-03 22:00:19\r
+[Tue Dec 03 19:00:46.520200 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:17479] 2019-12-03 22:00:44\r
+[Tue Dec 03 19:01:11.756021 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:28471] 2019-12-03 22:01:09\r
+[Tue Dec 03 19:01:36.977578 2019] [wsgi:error] [pid 15984:tid 1972] [client 192.168.1.105:22413] 2019-12-03 22:01:34\r
+[Tue Dec 03 19:02:02.208364 2019] [wsgi:error] [pid 15984:tid 1984] [client 192.168.1.105:29226] 2019-12-03 22:01:59\r
+[Tue Dec 03 19:02:27.444964 2019] [wsgi:error] [pid 15984:tid 1948] [client 192.168.1.105:29605] 2019-12-03 22:02:24\r
+[Tue Dec 03 19:02:52.685577 2019] [wsgi:error] [pid 15984:tid 1964] [client 192.168.1.105:44427] 2019-12-03 22:02:49\r

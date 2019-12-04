@@ -18,8 +18,8 @@
          <tr>
             <th class="has-text-centered">Nodo </th>
             <th class="has-text-centered">Timestamp </th>
-            <th class="has-text-centered">Volumen </th>
-            <th class="has-text-centered">Temperatura </th>
+            <th class="has-text-centered">Volumen (Lt)</th>
+            <th class="has-text-centered">Temperatura (°C)</th>
             <th class="has-text-centered">Latitud </th>
             <th class="has-text-centered">Longitud </th>
             <th class="has-text-centered">Evento </th>
@@ -33,58 +33,44 @@
 <script>
    $(document).ready(function () {
       var tabla;
-      refreshTable(true, tabla);
-      setInterval(function () { refreshTable(false, tabla); }, 3000);
+      refreshTable(true);
+      setInterval(function () { $('#t_datos').DataTable().ajax.reload(null, false); }, 5000);
       //setInterval(refreshTable, 1000);
    });
-   function refreshTable(primeraVez) {
-      $.ajax({
-         type: "POST",
-         url: "/mostrar",
-      }).done(function (data) {
-         var datosTabla = '';
-         $.each(data, function (key, value) {
-            datosTabla += '<tr>';
-            datosTabla += '<td>' + value.nombre_nodo + '</td>';
-            datosTabla += '<td>' + value.timestamp + '</td>';
-            datosTabla += '<td>' + value.volumen + '</td>';
-            datosTabla += '<td>' + value.temperatura + '</td>';
-            datosTabla += '<td>' + value.latitud + '</td>';
-            datosTabla += '<td>' + value.longitud + '</td>';
-            datosTabla += '<td>' + value.evento + '</td>';
-            datosTabla += '</tr>';
-         });
-         $('#tabla_datos').html(datosTabla);
-         if (primeraVez) {
-            console.log("primera vez")
-            tabla = $('#t_datos').DataTable({
-               "responsive": "true",
-               "language": {
-                  "lengthMenu": "Mostrar _MENU_ registros por pagina",
-                  "search": "Buscar:",
-                  "paginate": {
-                     "first": "Primera",
-                     "last": "Ultima",
-                     "next": "Proxima",
-                     "previous": "Anterior"
-                  },
-                  "zeroRecords": "Nothing found - sorry",
-                  "info": "Mostrando pagina _PAGE_ de _PAGES_",
-                  "infoEmpty": "No records available",
-                  "infoFiltered": "(filtered from _MAX_ total records)"
-               }
-            });
-         } else {
-            console.log("otra")
-            //tabla.draw(false)
-            tabla.draw();
-         }
-
-
-
-      }).fail(function (jqXHR) {
-         console.log(jqXHR.statusText);
+   function refreshTable() {
+      $('#t_datos').DataTable({
+         "ajax": {
+            "url": "/mostrar",
+            "type": "POST",
+            "dataSrc": ""
+         },
+         "responsive": "true",
+         "order": [ 1, 'desc' ],
+         "language": {
+            "lengthMenu": "Mostrar _MENU_ registros por pagina",
+            "search": "Buscar:",
+            "paginate": {
+               "first": "Primera",
+               "last": "Ultima",
+               "next": "Proxima",
+               "previous": "Anterior"
+            },
+            "zeroRecords": "Nothing found - sorry",
+            "info": "Mostrando pagina _PAGE_ de _PAGES_",
+            "infoEmpty": "No records available",
+            "infoFiltered": "(filtered from _MAX_ total records)"
+         },
+         columns: [
+            { data: "nombre_nodo" },
+            { data: "timestamp" },
+            { data: "volumen" },
+            { data: "temperatura" },
+            { data: "latitud" },
+            { data: "longitud" },
+            { data: "evento" }
+         ]
       });
    }
+
 </script>
 {% endblock %}
